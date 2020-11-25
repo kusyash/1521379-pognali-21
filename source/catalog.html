@@ -56,7 +56,44 @@
       </div>
     </header>
     <main>
+      <section class="intro-description">
+        <h1 class="intro-description__heading">Попутчики</h1>
+      </section>
+      <section class="fellow-travelers container">
+        <div class="fellow-travelers__country-filtration country-filtration">
+          <h2 class="country-filtration__title">Фильтрация по странам:</h2>
+          <button class="country-filtration__switch" type="button">
+            <span class="visually-hidden">Показать / Скрыть</span>
+          </button>
+        </div>
+        <div class="fellow-travelers__dropdown-list modal">
+          <ul class="expanded-filter__list">
+            <li class="expanded-filter__item">
+              <label class="expanded-filter__text">Европа
+                <input class="visually-hidden" type="checkbox" id="europe" name="europe" checked>
+              </label>
+            </li>
+            <li class="expanded-filter__item">
+              <label class="expanded-filter__text">Азия
+                <input class="visually-hidden" type="checkbox" id="asia" name="asia">
+              </label>
+            </li>
+            <li class="expanded-filter__item">
+              <label class="expanded-filter__text">Америка
+                <input class="visually-hidden" type="checkbox" id="america" name="america">
+              </label>
+            </li>
+            <li class="expanded-filter__item">
+              <label class="expanded-filter__text">Острова
+                <input class="visually-hidden" type="checkbox" id="islands" name="islands">
+              </label>
+            </li>
+          </ul>
+          <div>
 
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <a class="page-footer__logo">
