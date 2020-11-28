@@ -10,24 +10,22 @@
         <a class="page-header__logo" href="index.html">
           <img src="img/placeholder-100x15.png" width="100" height="15" alt="Логотип сайта «Погнали?»">
         </a>
-        <nav class="main-navigation_wrapper">
+        <nav class="main-navigation">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-navigation__site-list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">О сервисе</a>
+          <ul class="main-navigation__menu-list menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="index.html">О сервисе</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--current">Направления</a>
+            <li class="menu-list__item">
+              <a class="menu-list__link menu-list__link--current">Направления</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Попутчики</a>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <div class="main-navigation__list user-login">
-            <a class="user-login__link" href="#">Авторизация</a>
-          </div>
+          <a class="main-navigation__link user-login" href="#">Авторизация</a>
           <ul class="main-navigation__user-list user-list">
             <li class="user-list__item">
               <a class="user-list__link" href="tel:+78005558628">8 800 555-86-28</a>
@@ -38,16 +36,16 @@
               <img src="img/placeholder-45x45.png" height="45" width="45" alt="E-mail компании">
             </li>
           </ul>
-          <ul class="main-navigation__social-list social-list--header">
-            <li class="social-list__item">
+          <ul class="main-navigation__social-list">
+            <li class="social-list__item item--header">
               <a class="social-list__link" href="#" aria-label="Мы в Фейсбуке"></a>
               <img src="img/placeholder-11x21.png" height="11" width="21" alt="Фейсбук">
             </li>
-            <li class="social-list__item">
+            <li class="social-list__item item--header">
               <a class="social-list__link" href="#" aria-label="Мы в ВКонтакте"></a>
               <img src="img/placeholder-23x12.png" height="23" width="12" alt="ВКонтакте">
             </li>
-            <li class="social-list__item">
+            <li class="social-list__item item--header">
               <a class="social-list__link" href="#" aria-label="Мы в Инстаграм"></a>
               <img src="img/placeholder-18x18.png" height="18" width="18" alt="Инстаграм">
             </li>
@@ -79,14 +77,14 @@
                 <li>
                   <label class="traveler-profile__transport-item transport-item--active" for="plane">
                     <input class="visually-hidden" type="checkbox" id="plane" name="transport" value="plane" checked>
-                    <span class="visually-hidden">Самолет</span>
+                    <span class="visually-hidden">Авиаперелет</span>
                   </label>
                 </li>
                 <li>
                   <label class="traveler-profile__transport-item transport-item--active" for="car">
                     <input type="checkbox" id="car" name="transport" value="car" checked>
                   </label>
-                  <span class="visually-hidden">Машина</span>
+                  <span class="visually-hidden">Автотранспорт</span>
                 </li>
                 <li>
                   <label class="traveler-profile__transport-item" for="bicycle">
@@ -625,16 +623,16 @@
       <a class="page-footer__logo">
         <img class="logo__image" src="img/placeholder-96x15.png" width="96" height="15" alt="Логотип Погнали">
       </a>
-      <ul class="main-navigation__social-list social-list--footer">
-        <li class="social-list__item">
+      <ul class="main-navigation__social-list">
+        <li class="social-list__item item--footer">
           <a class="social-list__link" href="#" aria-label="Мы в Фейсбуке"></a>
           <img src="img/placeholder-45x45.png" height="45" width="45" alt="Фейсбук">
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item item--footer">
           <a class="social-list__link" href="#" aria-label="Мы в ВКонтакте"></a>
           <img src="img/placeholder-45x45.png" height="45" width="45" alt="ВКонтакте">
         </li>
-        <li class="social-list__item">
+        <li class="social-list__item item--footer">
           <a class="social-list__link" href="#" aria-label="Мы в Инстаграм"></a>
           <img src="img/placeholder-45x45.png" height="45" width="45" alt="Инстаграм">
         </li>
