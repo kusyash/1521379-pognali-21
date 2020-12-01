@@ -1,0 +1,79 @@
+.page-main {
+  //display: none;
+
+  .promo-description {
+    .promo-description__heading {
+      margin: 0;
+      padding: 0;
+      color: $color-white;
+      font-family: $font-bold;
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    .promo-description__quote {
+      margin: 0;
+      padding: 0;
+      color: $color-white;
+      font-family: $font-normal;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .promo-description__quote-author {
+      margin: 0;
+      padding: 0;
+      color: $color-white;
+      font-family: $font-bold;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .plan-program {
+    margin: 0;
+    padding: 0;
+    color: $color-basic-blue;
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 18px;
+
+    .plan-program__item:first-child {
+      background-color: $color-special-orange;
+    }
+
+    .plan-program__item:nth-child(2) {
+      background-color: $color-special-orange-lighter;
+    }
+
+    .plan-program__item {
+      background-color: $color-yellow-darker;
+    }
+
+    .plan-program__item:last-child {
+      background-color: $color-yellow;
+    }
+  }
+
+  .service-description {
+    .service-description__heading {
+      margin: 0;
+      padding: 0;
+      color: $color-special-orange;
+      font-family: $font-bold;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    .service-description__desc {
+      margin: 0;
+      padding: 0;
+      color: $color-white;
+      font-family: $font-normal;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}

@@ -1,1 +1,10 @@
-// Начните писать стили здесь
+@import "fonts";
+@import "variables";
+@import "blocks/modules/visually-hidden";
+@import "blocks/modules/button-base";
+@import "blocks/modules/page";
+@import "blocks/layout/page-header";
+@import "blocks/layout/main-navigation";
+@import "blocks/pages/index/page-main";
+@import "blocks/layout/page-footer";
+@import "blocks/modules/modal.scss";

@@ -3,17 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
-  </head>
+    <link rel="stylesheet" href="css/style.css">
   <body class="page__body">
     <header class="page-header page-header--scroll">
       <div class="page-header__top">
-          <a class="page-header__logo">
-            <img src="img/placeholder-100x15.png" alt="Логотип сайта «Погнали?»" width="100" height="15">
-          </a>
+        <a class="page-header__logo">
+          <img src="img/placeholder-100x15.png" alt="Логотип сайта «Погнали?»" width="100" height="15">
+        </a>
+        <button class="page-header__scroll" type="button"></button>
         <nav class="main-navigation">
-          <button class="main-navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
           <ul class="main-navigation__menu-list menu-list">
             <li class="menu-list__item">
               <a class="menu-list__link menu-list__link--current">О сервисе</a>
@@ -25,7 +23,7 @@
               <a class="menu-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <a class="main-navigation__link user-login" href="#">Авторизация</a>
+          <a class="main-navigation__link button-base user-login" href="#">Авторизация</a>
           <ul class="main-navigation__user-list user-list">
             <li class="user-list__item">
               <a class="user-list__link" href="tel:+78005558628">8 800 555-86-28</a>
@@ -64,7 +62,7 @@
       </section>
       <section class="plan-program">
         <h2 class="visually-hidden">План Вашего путешествия</h2>
-        <ol class="plan-program__list">
+        <ul class="plan-program__list">
           <li class="plan-program__item">
             Выберите направление
           </li>
@@ -77,7 +75,7 @@
           <li class="plan-program__item">
             Путешествуйте вместе!
           </li>
-        </ol>
+        </ul>
       </section>
       <section class="service-description">
         <h2 class="service-description__heading">О сервисе</h2>
@@ -166,35 +164,31 @@
             </ul>
             <div class="companion-travelers__tourist-info">
               <h3 class="companion-travelers__subtitle">Таня Фирсова</h3>
-              <div class="companion-travelers__desc">
-                <a href="#">#ЗОЖ</a>
-                <a href="#">#ПП</a>
-                <a href="#">#Фитнес</a>
-                <a href="#">#пляж</a>
-                <a href="#">#авокадо</a>
-                <a href="#">#смузи</a>
-              </div>
+              <ul class="companion-travelers__desc-list">
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#ЗОЖ</a>
+                </li>
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#ПП</a>
+                </li>
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#Фитнес</a>
+                </li>
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#пляж</a>
+                </li>
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#авокадо</a>
+                </li>
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#смузи</a>
+                </li>
+              </ul>
               <ul class="companion-travelers__transport-list transport">
-                <li class="companion-travelers__transport-item transport-item--active">
-                  <a href="#">
-                    <span class="transport__type-transport">Авиаперелет</span>
-                  </a>
-                </li>
-                <li class="companion-travelers__transport-item">
-                  <a href="#">
-                    <span class="transport__type-transport">Автотранспорт</span>
-                  </a>
-                </li>
-                <li class="companion-travelers__transport-item">
-                  <a href="#">
-                    <span class="transport__type-transport">Велосипед</span>
-                  </a>
-                </li>
-                <li class="companion-travelers__transport-item">
-                  <a href="#">
-                    <span class="transport__type-transport">Пешком</span>
-                  </a>
-                </li>
+                <li class="companion-travelers__transport-item transport-item--active">Авиаперелет</li>
+                <li class="companion-travelers__transport-item">Автотранспорт</li>
+                <li class="companion-travelers__transport-item">Велосипед</li>
+                <li class="companion-travelers__transport-item">Пешком</li>
               </ul>
             </div>
           </li>
@@ -216,13 +210,23 @@
             </ul>
             <div class="companion-travelers__tourist-info">
               <h3 class="companion-travelers__subtitle">Петя Демин</h3>
-              <div class="companion-travelers__desc">
-                <a href="#">#бургер</a>
-                <a href="#">#бар</a>
-                <a href="#">#футбол</a>
-                <a href="#">#концерт</a>
-                <a href="#">#крафт</a>
-              </div>
+              <ul class="companion-travelers__desc-list">
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#бургер</a>
+                </li>
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#бар</a>
+                </li>
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#футбол</a>
+                </li>
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#концерт</a>
+                </li>
+                <li class="companion-travelers__desc-item">
+                  <a href="#">#крафт</a>
+                </li>
+              </ul>
               <ul class="companion-travelers__transport-list">
                 <li class="companion-travelers__transport-item transport-item--active">Авиаперелет</li>
                 <li class="companion-travelers__transport-item transport-item--active">Автотранспорт</li>
@@ -253,28 +257,6 @@
             </div>
           </dl>
           <a class="price-plan__link" href="#">Показать тарифы для бизнеса</a>
-        </section>
-        <section class="price-plan buisness price modal">
-          <h3 class="price__subtitle price__subtitle--buisness">Бизнес-тарифы</h3>
-          <dl class="price__list price-list--buisness">
-            <div class="price__item price__item--buisness">
-              <dt>Реклама у блоггера</dt>
-              <dd>300 000 руб.</dd>
-            </div>
-            <div class="price__item price__item--buisness">
-              <dt>Накрутка подписчиков</dt>
-              <dd>от 1 руб./шт.</dd>
-            </div>
-            <div class="price__item price__item--buisness">
-              <dt>Лайки от ботов</dt>
-              <dd>от 20 коп./лайк</dd>
-            </div>
-            <div class="price__item price__item--buisness">
-              <dt>Ваш продакт-плейсмент</dt>
-              <dd>Индивидуально</dd>
-            </div>
-          </dl>
-          <button class="modal__close" type="button">Закрыть окно</button>
         </section>
       </section>
       <section class="account-registration">
@@ -335,5 +317,27 @@
         </a>
       </p>
     </footer>
+    <section class="price-plan buisness price modal">
+      <h3 class="price__subtitle price__subtitle--buisness">Бизнес-тарифы</h3>
+      <dl class="price__list price-list--buisness">
+        <div class="price__item price__item--buisness">
+          <dt>Реклама у блоггера</dt>
+          <dd>300 000 руб.</dd>
+        </div>
+        <div class="price__item price__item--buisness">
+          <dt>Накрутка подписчиков</dt>
+          <dd>от 1 руб./шт.</dd>
+        </div>
+        <div class="price__item price__item--buisness">
+          <dt>Лайки от ботов</dt>
+          <dd>от 20 коп./лайк</dd>
+        </div>
+        <div class="price__item price__item--buisness">
+          <dt>Ваш продакт-плейсмент</dt>
+          <dd>Индивидуально</dd>
+        </div>
+      </dl>
+      <button class="modal__close" type="button">Закрыть окно</button>
+    </section>
   </body>
 </html>

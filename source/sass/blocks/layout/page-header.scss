@@ -1,0 +1,38 @@
+.page-header {
+  .page-header__scroll {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 11px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: $color-basic-blue-lighter;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      top: 0;
+      background-color: $color-white;
+      border-radius: 1.5px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      top: 8px;
+      background-color: $color-white;
+      border-radius: 1.5px;
+    }
+  }
+}
