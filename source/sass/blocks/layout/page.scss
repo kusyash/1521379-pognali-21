@@ -1,5 +1,6 @@
 .page {
   height: 100%;
+  box-sizing: border-box;
 
   .page__body {
     display: grid;
@@ -11,5 +12,10 @@
     padding: 0;
     font-family: $font-normal;
     background-color: $color-basic-blue-lighter;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }

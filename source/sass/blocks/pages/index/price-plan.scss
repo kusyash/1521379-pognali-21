@@ -1,0 +1,27 @@
+.price-plan {
+  background-color: $color-basic-blue-grey;
+
+  .price {
+    .price__subtitle {
+      margin: 0;
+      padding: 0;
+      color: $color-special-orange;
+      font-family: $font-bold;
+      font-size: 21px;
+      line-height: 21px;
+    }
+
+    .price__item {
+      color: $color-special-grey;
+    }
+
+    .price-plan__link {
+      margin: 0;
+      padding: 0;
+      color: $color-basic-blue-light;
+      font-family: $font-bold;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}

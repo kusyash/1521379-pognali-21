@@ -1,0 +1,18 @@
+.company-contacts {
+  .company-contacts__phone,
+  .company-contacts__email,
+  .company-contacts__adress {
+    margin: 0;
+    padding: 0;
+    color: $color-yellow;
+    font-family: $font-bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .company-contacts__get-direction {
+    font-size: 18px;
+    line-height: 18px;
+    background-color: $color-yellow;
+  }
+}

@@ -1,0 +1,65 @@
+.companion-travelers {
+  .companion-travelers__heading {
+    margin: 0;
+    padding: 0;
+    color: $color-special-orange;
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .companion-travelers__desc {
+    margin: 0;
+    padding: 0;
+    color: $color-white;
+    font-family: $font-normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .companion-travelers__item {
+    background-color: $color-white;
+  }
+
+  .companion-travelers__subtitle {
+    margin: 0;
+    padding: 0;
+    color: $color-basic-blue-lightest;
+    font-family: $font-bold;
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .companion-travelers__desc-item {
+    margin: 0;
+    padding: 0;
+    color: $color-special-grey;
+    font-family: $font-medium;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .levels-number {
+    margin: 0;
+    padding: 0;
+    color: $color-white;
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .levels-text {
+    margin: 0;
+    padding: 0;
+    color: $color-white;
+    font-family: $font-medium;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .companion-travelers__show-all {
+    font-size: 18px;
+    line-height: 18px;
+    background-color: $color-yellow;
+  }
+}
