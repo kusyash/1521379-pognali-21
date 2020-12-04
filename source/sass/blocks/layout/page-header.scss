@@ -1,4 +1,6 @@
 .page-header {
+  background-color: $color-blue-dark;
+
   .page-header__scroll {
     position: relative;
     display: flex;
@@ -11,7 +13,7 @@
     cursor: pointer;
     border: none;
     outline: none;
-    background-color: $color-basic-blue-lighter;
+    background-color: $color-basic-blue;
 
     &::before {
       content: "";

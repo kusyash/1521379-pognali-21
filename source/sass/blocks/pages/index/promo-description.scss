@@ -1,4 +1,6 @@
 .promo-description {
+  background-color: $color-blue-dark;
+
   .promo-description__heading {
     margin: 0;
     padding: 0;
@@ -26,5 +28,32 @@
     font-style: normal;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .promo-description__plan-program {
+    margin: 0;
+    padding: 0;
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: $color-basic-blue-darkest;
+
+    .plan-program {
+      .plan-program__item:first-child {
+        background-color: $color-special-orange;
+      }
+
+      .plan-program__item:nth-child(2) {
+        background-color: $color-special-orange-lighter;
+      }
+
+      .plan-program__item {
+        background-color: $color-yellow-darker;
+      }
+
+      .plan-program__item:last-child {
+        background-color: $color-yellow;
+      }
+    }
   }
 }

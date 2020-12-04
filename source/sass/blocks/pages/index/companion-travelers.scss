@@ -1,4 +1,6 @@
 .companion-travelers {
+  background-color: $color-basic-blue;
+
   .companion-travelers__heading {
     margin: 0;
     padding: 0;
@@ -24,7 +26,7 @@
   .companion-travelers__subtitle {
     margin: 0;
     padding: 0;
-    color: $color-basic-blue-lightest;
+    color: $color-basic-blue-lighter;
     font-family: $font-bold;
     font-size: 21px;
     line-height: 21px;
