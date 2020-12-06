@@ -1,59 +1,35 @@
 .promo-description {
   background-color: $color-blue-dark;
 
-  .promo-description__heading {
+  .promo-description__heading,
+  .promo-description__quote,
+  .promo-description__quote-author,
+  .promo-description__plan-program-list,
+  .promo-description__plan-program {
     margin: 0;
     padding: 0;
-    color: $color-white;
-    font-family: $font-bold;
+  }
+
+  .promo-description__heading {
     font-size: 36px;
     line-height: 40px;
   }
 
-  .promo-description__quote {
-    margin: 0;
-    padding: 0;
+  .promo-description__heading,
+  .promo-description__quote,
+  .promo-description__quote-author {
     color: $color-white;
-    font-family: $font-normal;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 22px;
   }
 
-  .promo-description__quote-author {
-    margin: 0;
-    padding: 0;
-    color: $color-white;
+  .promo-description__heading,
+  .promo-description__quote-author,
+  .promo-description__plan-program {
     font-family: $font-bold;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 22px;
   }
 
   .promo-description__plan-program {
-    margin: 0;
-    padding: 0;
-    font-family: $font-bold;
     font-size: 18px;
     line-height: 18px;
     color: $color-basic-blue-darkest;
-
-    .plan-program {
-      .plan-program__item:first-child {
-        background-color: $color-special-orange;
-      }
-
-      .plan-program__item:nth-child(2) {
-        background-color: $color-special-orange-lighter;
-      }
-
-      .plan-program__item {
-        background-color: $color-yellow-darker;
-      }
-
-      .plan-program__item:last-child {
-        background-color: $color-yellow;
-      }
-    }
   }
 }

@@ -1,6 +1,10 @@
 .company-contacts {
   background-color: $color-basic-blue;
 
+  .company-contacts__list {
+    margin: 0;
+  }
+
   .company-contacts__phone,
   .company-contacts__email,
   .company-contacts__adress {
@@ -8,13 +12,14 @@
     padding: 0;
     color: $color-yellow;
     font-family: $font-bold;
-    font-size: 16px;
-    line-height: 22px;
   }
 
   .company-contacts__get-direction {
     font-size: 18px;
     line-height: 18px;
+    font-family: $font-bold;
+    color: $color-basic-blue-lighter;
     background-color: $color-yellow;
+    text-decoration: none;
   }
 }

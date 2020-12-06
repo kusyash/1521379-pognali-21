@@ -1,59 +1,60 @@
 .companion-travelers {
   background-color: $color-basic-blue;
 
-  .companion-travelers__heading {
+  .companion-travelers__heading,
+  .companion-travelers__desc,
+  .companion-travelers__subtitle,
+  .companion-travelers__desc-item,
+  .companion-travelers__levels-number,
+  .companion-travelers__levels-text {
     margin: 0;
     padding: 0;
-    color: $color-special-orange;
-    font-family: $font-bold;
+  }
+
+  .companion-travelers__heading,
+  .companion-travelers__levels-number {
     font-size: 24px;
     line-height: 24px;
+    font-family: $font-bold;
   }
 
-  .companion-travelers__desc {
-    margin: 0;
-    padding: 0;
+  .companion-travelers__levels-number,
+  .companion-travelers__show-all {
+    font-family: $font-bold;
+  }
+
+  .companion-travelers__heading {
+    color: $color-special-orange;
+  }
+
+  .companion-travelers__desc,
+  .companion-travelers__levels-number,
+  .companion-travelers__levels-text {
     color: $color-white;
-    font-family: $font-normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .companion-travelers__item {
-    background-color: $color-white;
   }
 
   .companion-travelers__subtitle {
-    margin: 0;
-    padding: 0;
     color: $color-basic-blue-lighter;
     font-family: $font-bold;
     font-size: 21px;
     line-height: 21px;
   }
 
-  .companion-travelers__desc-item {
-    margin: 0;
-    padding: 0;
-    color: $color-special-grey;
+  .companion-travelers__tag {
     font-family: $font-medium;
-    font-size: 16px;
+  }
+
+  .companion-travelers__tag,
+  .companion-travelers__show-all {
     line-height: 18px;
+    text-decoration: none;
   }
 
-  .levels-number {
-    margin: 0;
-    padding: 0;
-    color: $color-white;
-    font-family: $font-bold;
-    font-size: 24px;
-    line-height: 24px;
+  .companion-travelers__item {
+    background-color: $color-white;
   }
 
-  .levels-text {
-    margin: 0;
-    padding: 0;
-    color: $color-white;
+  .companion-travelers__levels-text {
     font-family: $font-medium;
     font-size: 14px;
     line-height: 14px;
@@ -61,7 +62,7 @@
 
   .companion-travelers__show-all {
     font-size: 18px;
-    line-height: 18px;
+    color: $color-basic-blue-lighter;
     background-color: $color-yellow;
   }
 }

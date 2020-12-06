@@ -1,27 +1,23 @@
 .directions {
   background-color: $color-basic-blue-grey;
 
-  .directions__heading {
+  .directions__heading,
+  .directions__desc,
+  .directions__subtitle,
+  .directions__slogan,
+  .directions__counter-users {
     margin: 0;
     padding: 0;
+  }
+
+  .directions__heading {
     color: $color-special-orange;
     font-family: $font-bold;
     font-size: 24px;
     line-height: 24px;
   }
 
-  .directions__desc {
-    margin: 0;
-    padding: 0;
-    color: $color-special-grey;
-    font-family: $font-normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
   .directions__subtitle {
-    margin: 0;
-    padding: 0;
     color: $color-black;
     font-family: $font-bold;
     font-size: 21px;
@@ -29,21 +25,14 @@
   }
 
   .directions__slogan {
-    margin: 0;
-    padding: 0;
-    color: $color-special-grey;
     font-family: $font-medium;
-    font-size: 16px;
     line-height: 18px;
     opacity: 0.3;
   }
 
   .directions__counter-users {
-    margin: 0;
-    padding: 0;
     color: $color-basic-blue-darkest;
     font-family: $font-medium;
-    font-size: 16px;
     line-height: 20px;
     opacity: 0.3;
   }

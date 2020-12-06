@@ -2,44 +2,37 @@
   background-color: $color-basic-blue;
 
   .account-registration__heading {
-    margin: 0;
-    padding: 0;
     color: $color-special-orange;
-    font-family: $font-bold;
     font-size: 24px;
     line-height: 24px;
   }
 
-  .account-registration__desc {
+  .account-registration__heading,
+  .account-registration__desc,
+  .account-registration__link,
+  .account-registration__input {
     margin: 0;
     padding: 0;
+  }
+
+  .account-registration__heading,
+  .account-registration__input {
+    font-family: $font-bold;
+  }
+
+  .account-registration__desc {
     color: $color-white;
-    font-family: $font-normal;
-    font-size: 16px;
-    line-height: 22px;
   }
 
   .account-registration__link {
-    margin: 0;
-    padding: 0;
     color: $color-yellow;
-    font-family: $font-normal;
-    font-size: 16px;
-    line-height: 22px;
   }
 
-  .account-registration__label {
-    .account-registration__input {
-      margin: 0;
-      padding: 0;
-      color: $color-special-grey;
-      font-family: $font-bold;
-      background-color: $color-white;
-      //opacity: 0.3;
-      font-size: 16px;
-      border: none;
-      outline: none;
-    }
+  .account-registration__input {
+    background-color: $color-white;
+    //opacity: 0.3;
+    border: none;
+    outline: none;
   }
 
   .account-registration__submit {
