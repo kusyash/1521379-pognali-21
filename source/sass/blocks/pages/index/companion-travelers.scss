@@ -3,6 +3,7 @@
 
   .companion-travelers__heading,
   .companion-travelers__desc,
+  .companion-travelers__list,
   .companion-travelers__subtitle,
   .companion-travelers__desc-item,
   .companion-travelers__levels-number,
@@ -42,11 +43,7 @@
 
   .companion-travelers__tag {
     font-family: $font-medium;
-  }
-
-  .companion-travelers__tag,
-  .companion-travelers__show-all {
-    line-height: 18px;
+    color: $color-special-grey;
     text-decoration: none;
   }
 
@@ -60,9 +57,10 @@
     line-height: 14px;
   }
 
-  .companion-travelers__show-all {
-    font-size: 18px;
-    color: $color-basic-blue-lighter;
-    background-color: $color-yellow;
+  .companion-travelers__button-open-all {
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 224px;
+    position: relative;
   }
 }

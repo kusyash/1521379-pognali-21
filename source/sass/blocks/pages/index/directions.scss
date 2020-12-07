@@ -3,6 +3,7 @@
 
   .directions__heading,
   .directions__desc,
+  .directions__list,
   .directions__subtitle,
   .directions__slogan,
   .directions__counter-users {
@@ -38,7 +39,7 @@
   }
 
   .directions__button-open-all {
-    font-size: 18px;
-    line-height: 18px;
+    min-width: 270px;
+    position: relative;
   }
 }

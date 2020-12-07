@@ -1,7 +1,9 @@
 @import "global/fonts";
 @import "global/variables";
+@import "mixins/index";
 @import "blocks/modules/visually-hidden";
 @import "blocks/modules/button-base";
+@import "blocks/modules/button-open-all";
 @import "blocks/layout/page";
 @import "blocks/layout/page-header";
 @import "blocks/layout/main-navigation";

@@ -2,17 +2,10 @@
   background-color: $color-basic-blue;
 
   .account-registration__heading {
+    @include indents();
     color: $color-special-orange;
     font-size: 24px;
     line-height: 24px;
-  }
-
-  .account-registration__heading,
-  .account-registration__desc,
-  .account-registration__link,
-  .account-registration__input {
-    margin: 0;
-    padding: 0;
   }
 
   .account-registration__heading,
@@ -21,27 +14,66 @@
   }
 
   .account-registration__desc {
+    @include indents();
     color: $color-white;
   }
 
   .account-registration__link {
+    @include indents();
     color: $color-yellow;
   }
 
-  .account-registration__input {
-    background-color: $color-white;
-    //opacity: 0.3;
-    border: none;
-    outline: none;
+  .account-registration__field {
+    @include indents();
   }
 
-  .account-registration__submit {
+  .account-registration__input {
+    font-size: 18px;
+    background-color: $color-white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    height: 62px;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
+  }
+
+  .account-registration__button-submit {
     background-color: $color-yellow;
+    color: $color-basic-blue-lighter;
     width: 60px;
     height: 62px;
+    margin-left: -15px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
     border-radius: 10px;
     border: none;
     outline: none;
+    position: relative;
     cursor: pointer;
+
+    &:hover {
+      background-color: $color-yellow-darker;
+    }
+
+    &:active,
+    &:focus {
+      color: $color-blue-a3;
+    }
+
+    &::before {
+      content: "▸";
+      display: block;
+      position: absolute;
+      font-size: 40px;
+      border: none;
+      right: 11px;
+      top: 7px;
+    }
   }
 }

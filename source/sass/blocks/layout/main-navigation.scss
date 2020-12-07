@@ -1,4 +1,11 @@
 .main-navigation {
   display: none;
   background-color: $color-white;
+
+  .main-navigation__menu-list,
+  .main-navigation__user-list,
+  .main-navigation__social-list {
+    margin: 0;
+    padding: 0;
+  }
 }

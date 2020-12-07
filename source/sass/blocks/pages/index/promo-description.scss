@@ -2,6 +2,8 @@
   background-color: $color-blue-dark;
 
   .promo-description__heading,
+  .promo-description__user-list,
+  .promo-description__review,
   .promo-description__quote,
   .promo-description__quote-author,
   .promo-description__plan-program-list,
@@ -25,6 +27,10 @@
   .promo-description__quote-author,
   .promo-description__plan-program {
     font-family: $font-bold;
+  }
+
+  .promo-description__quote-author {
+    font-style: normal;
   }
 
   .promo-description__plan-program {
