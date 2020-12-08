@@ -1,7 +1,7 @@
 .social-list {
-  .social-list__item {
-    &.social-list__item--header {
-      display: none;
-    }
+  &.social-list--header,
+  &.social-list--footer {
+    margin: 0;
+    padding: 0;
   }
 }

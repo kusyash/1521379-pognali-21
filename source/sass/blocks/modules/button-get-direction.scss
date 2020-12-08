@@ -1,26 +1,28 @@
-.button-open-all {
-  $button-open-all-height: 62px;
+.button-get-direction {
+  $button-get-direction-height: 62px;
   font-family: $font-bold;
   font-weight: 800;
   font-size: 18px;
-  color: $color-basic-blue-lighter;
+  color: $color-basic-blue;
   background-color: $color-yellow;
-  padding: 0 23px;
+  padding: 0 19px;
+  position: relative;
   display: inline-block;
   text-align: left;
   vertical-align: middle;
-  border: none;
+  border: 3px solid $color-basic-blue;
   outline: none;
-  line-height: $button-open-all-height;
-  border-radius: $button-open-all-height / 6.2;
+  line-height: 56px;
+  border-radius: 20px;
 
   &:hover {
-    background-color: $color-yellow-darker;
+    background-color: $color-basic-blue;
+    color: $color-white;
   }
 
   &:active,
   &:focus {
-    color: $color-blue-a3;
+    color: $color-white-a3;
   }
 
   &::before {
@@ -29,6 +31,6 @@
     position: absolute;
     font-size: 40px;
     border: none;
-    right: 23px;
+    right: 8px;
   }
 }

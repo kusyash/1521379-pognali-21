@@ -1,18 +1,16 @@
-.button-open-all {
-  $button-open-all-height: 62px;
-  font-family: $font-bold;
-  font-weight: 800;
-  font-size: 18px;
-  color: $color-basic-blue-lighter;
+.button-submit {
   background-color: $color-yellow;
-  padding: 0 23px;
+  color: $color-basic-blue-lighter;
+  width: 60px;
+  height: 62px;
+  margin-left: -15px;
   display: inline-block;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
+  border-radius: 10px;
   border: none;
   outline: none;
-  line-height: $button-open-all-height;
-  border-radius: $button-open-all-height / 6.2;
+  position: relative;
 
   &:hover {
     background-color: $color-yellow-darker;
@@ -29,6 +27,7 @@
     position: absolute;
     font-size: 40px;
     border: none;
-    right: 23px;
+    right: 11px;
+    top: 7px;
   }
 }

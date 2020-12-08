@@ -1,10 +1,42 @@
 .user-list {
-  .user-list__link {
+  &.user-list--header,
+  &.user-list--contacts {
     margin: 0;
     padding: 0;
-    font-family: $font-bold;
-    font-weight: 800;
-    color: $color-basic-blue-darkest;
-    text-decoration: none;
+
+    .user-list__link {
+      &.user-list__link--header,
+      &.user-list__link--contacts {
+        font-family: $font-bold;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      &.user-list__link--header {
+        color: $color-basic-blue;
+
+        &:hover {
+          color: $color-yellow;
+        }
+
+        &:active,
+        &:focus {
+          color: $color-yellow-a3;
+        }
+      }
+
+      &.user-list__link--contacts {
+        color: $color-yellow;
+
+        &:hover {
+          color: $color-yellow-darker;
+        }
+
+        &:active,
+        &:focus {
+          color: $color-yellow-a3;
+        }
+      }
+    }
   }
 }

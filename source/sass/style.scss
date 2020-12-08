@@ -4,12 +4,17 @@
 @import "blocks/modules/visually-hidden";
 @import "blocks/modules/button-base";
 @import "blocks/modules/button-open-all";
+@import "blocks/modules/button-get-direction";
+@import "blocks/modules/button-submit";
+@import "blocks/modules/button-close";
 @import "blocks/layout/page";
 @import "blocks/layout/page-header";
 @import "blocks/layout/main-navigation";
 @import "blocks/layout/menu-list";
 @import "blocks/layout/user-list";
 @import "blocks/layout/social-list";
+@import "blocks/layout/copyright";
+@import "blocks/layout/page-footer";
 @import "blocks/pages/index/promo-description";
 @import "blocks/pages/index/plan-program";
 @import "blocks/pages/index/service-description";
@@ -19,5 +24,4 @@
 @import "blocks/pages/index/price";
 @import "blocks/pages/index/account-registration";
 @import "blocks/pages/index/company-contacts";
-@import "blocks/layout/page-footer";
 @import "blocks/modules/modal";

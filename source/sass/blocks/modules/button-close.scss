@@ -1,0 +1,25 @@
+.modal__button-close {
+  $button-close-height: 59px;
+  font-family: $font-bold;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $color-basic-blue-lighter;
+  background-color: $color-basic-blue-grey-light;
+  padding: 0 80px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  line-height: $button-close-height;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  &:hover {
+    background-color: $color-basic-blue-grey;
+  }
+
+  &:active,
+  &:focus {
+    color: $color-blue-a3;
+  }
+}

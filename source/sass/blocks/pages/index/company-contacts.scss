@@ -24,42 +24,8 @@
   }
 
   .company-contacts__button-get-direction {
-    $button-get-direction-height: 62px;
-    font-family: $font-bold;
-    font-weight: 800;
-    font-size: 18px;
-    color: $color-basic-blue;
-    background-color: $color-yellow;
-    padding: 0 19px 0 20px;
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-    border: 3px solid $color-basic-blue;
-    outline: none;
-    line-height: 56px;
-    border-radius: 20px;
     min-width: 225px;
     text-decoration: none;
     cursor: pointer;
-
-    &:hover {
-      background-color: $color-basic-blue;
-      color: $color-white;
-    }
-
-    &:active,
-    &:focus {
-      color: $color-white-a3;
-    }
-
-    &::before {
-      content: "▸";
-      display: block;
-      position: absolute;
-      font-size: 40px;
-      border: none;
-      right: 8px;
-    }
   }
 }
