@@ -1,8 +1,7 @@
 .user-list {
   &.user-list--header,
   &.user-list--contacts {
-    margin: 0;
-    padding: 0;
+    @include indents();
 
     .user-list__link {
       &.user-list__link--header,

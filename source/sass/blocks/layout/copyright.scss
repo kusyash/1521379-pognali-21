@@ -11,16 +11,16 @@
     &:focus {
       color: $color-special-grey-a3;
     }
-  }
 
-  .copyright__logo {
-    &:hover {
-      opacity: 0.6;
-    }
+    .copyright__logo {
+      &:hover {
+        opacity: 0.6;
+      }
 
-    &:active,
-    &:focus {
-      opacity: 0.3;
+      &:active,
+      &:focus {
+        opacity: 0.3;
+      }
     }
   }
 }

@@ -1,6 +1,10 @@
 .companion-travelers {
   background-color: $color-basic-blue;
 
+  .companion-travelers__heading {
+    color: $color-special-orange;
+  }
+
   .companion-travelers__heading,
   .companion-travelers__desc,
   .companion-travelers__list,
@@ -8,8 +12,7 @@
   .companion-travelers__desc-item,
   .companion-travelers__levels-number,
   .companion-travelers__levels-text {
-    margin: 0;
-    padding: 0;
+    @include indents();
   }
 
   .companion-travelers__heading,
@@ -22,10 +25,6 @@
   .companion-travelers__levels-number,
   .companion-travelers__show-all {
     font-family: $font-bold;
-  }
-
-  .companion-travelers__heading {
-    color: $color-special-orange;
   }
 
   .companion-travelers__desc,

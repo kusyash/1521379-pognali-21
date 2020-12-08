@@ -8,8 +8,7 @@
 
   .company-contacts__user-list,
   .company-contacts__adress {
-    margin: 0;
-    padding: 0;
+    @include indents();
   }
 
   .company-contacts__content {

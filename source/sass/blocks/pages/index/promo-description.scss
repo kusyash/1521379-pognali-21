@@ -1,6 +1,11 @@
 .promo-description {
   background-color: $color-blue-dark;
 
+  .promo-description__heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
   .promo-description__heading,
   .promo-description__user-list,
   .promo-description__review,
@@ -8,13 +13,7 @@
   .promo-description__quote-author,
   .promo-description__plan-program-list,
   .promo-description__plan-program {
-    margin: 0;
-    padding: 0;
-  }
-
-  .promo-description__heading {
-    font-size: 36px;
-    line-height: 40px;
+    @include indents();
   }
 
   .promo-description__heading,

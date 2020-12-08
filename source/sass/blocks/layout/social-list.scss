@@ -1,7 +1,6 @@
 .social-list {
   &.social-list--header,
   &.social-list--footer {
-    margin: 0;
-    padding: 0;
+    @include indents();
   }
 }

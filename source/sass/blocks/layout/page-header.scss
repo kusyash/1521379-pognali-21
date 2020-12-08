@@ -2,14 +2,13 @@
   background-color: $color-blue-dark;
 
   .page-header__scroll {
+    @include indents();
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25px;
     height: 11px;
-    margin: 0;
-    padding: 0;
     cursor: pointer;
     border: none;
     outline: none;

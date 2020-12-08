@@ -1,7 +1,6 @@
 .price {
   .price__subtitle {
-    margin: 0;
-    padding: 0;
+    @include indents();
     color: $color-special-orange;
     font-family: $font-bold;
     font-size: 21px;

@@ -2,8 +2,7 @@
   background-color: $color-basic-blue-grey;
 
   .price-plan__link {
-    margin: 0;
-    padding: 0;
+    @include indents();
     color: $color-basic-blue-lightest;
     font-family: $font-bold;
     line-height: 16px;

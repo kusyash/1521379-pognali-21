@@ -2,10 +2,16 @@
   background-color: $color-basic-blue;
 
   .account-registration__heading {
-    @include indents();
     color: $color-special-orange;
     font-size: 24px;
     line-height: 24px;
+  }
+
+  .account-registration__heading,
+  .account-registration__desc,
+  .account-registration__link,
+  .account-registration__field {
+    @include indents();
   }
 
   .account-registration__heading,
@@ -14,12 +20,10 @@
   }
 
   .account-registration__desc {
-    @include indents();
     color: $color-white;
   }
 
   .account-registration__link {
-    @include indents();
     color: $color-yellow;
 
     &:hover {
@@ -30,10 +34,6 @@
     &:focus {
       color: $color-special-orange-dark-a3;
     }
-  }
-
-  .account-registration__field {
-    @include indents();
   }
 
   .account-registration__input {

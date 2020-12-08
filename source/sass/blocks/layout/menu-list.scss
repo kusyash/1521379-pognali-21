@@ -1,6 +1,5 @@
 .menu-list {
-  margin: 0;
-  padding: 0;
+  @include indents();
 
   .menu-list__link {
     font-family: $font-medium;

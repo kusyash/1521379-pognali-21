@@ -10,8 +10,7 @@
 
   .service-description__heading,
   .service-description__desc {
-    margin: 0;
-    padding: 0;
+    @include indents();
   }
 
   .service-description__desc {
