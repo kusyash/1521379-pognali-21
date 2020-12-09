@@ -3,8 +3,7 @@
   box-sizing: border-box;
 
   .page__body {
-    margin: 0 25px;
-    padding: 0;
+    @include indents();
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: min-content 1fr min-content;

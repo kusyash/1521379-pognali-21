@@ -1,5 +1,5 @@
 .directions {
-  @include corner-radius();
+  @include main-block-bottom();
   background-color: $color-basic-blue-grey;
 
   .directions__heading {

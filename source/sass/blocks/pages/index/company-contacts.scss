@@ -1,5 +1,5 @@
 .company-contacts {
-  @include corner-radius();
+  @include main-block-bottom();
   background-color: $color-basic-blue;
 
   .user-list__link {
@@ -13,7 +13,7 @@
   }
 
   .company-contacts__content {
-    @include corner-radius();
+    @include main-block-bottom();
     background-color: $color-yellow;
   }
 

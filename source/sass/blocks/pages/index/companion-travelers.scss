@@ -1,5 +1,5 @@
 .companion-travelers {
-  @include corner-radius();
+  @include main-block-bottom();
   background-color: $color-basic-blue;
 
   .companion-travelers__heading {
