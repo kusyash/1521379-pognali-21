@@ -1,0 +1,19 @@
+.button-base--next {
+  $button-base--next-height: 62px;
+  font-size: 18px;
+  text-transform: inherit;
+  color: $color-basic-blue-lighter;
+  padding-left: 24px;
+  position: relative;
+  line-height: $button-base--next-height;
+  border-radius: $button-base--next-height / 6.2;
+
+  &::before {
+    content: "▸";
+    display: block;
+    position: absolute;
+    font-size: 40px;
+    border: none;
+    right: 23px;
+  }
+}

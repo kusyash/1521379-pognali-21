@@ -1,4 +1,5 @@
 .company-contacts {
+  @include corner-radius();
   background-color: $color-basic-blue;
 
   .user-list__link {
@@ -12,6 +13,7 @@
   }
 
   .company-contacts__content {
+    @include corner-radius();
     background-color: $color-yellow;
   }
 
@@ -22,9 +24,7 @@
     font-style: normal;
   }
 
-  .company-contacts__button-get-direction {
-    min-width: 225px;
-    text-decoration: none;
-    cursor: pointer;
+  .company-contacts__button-base {
+    padding-right: 77px;
   }
 }

@@ -1,5 +1,7 @@
 .service-description {
+  @include corner-radius();
   background-color: $color-basic-blue;
+  margin-bottom: 85px;
 
   .service-description__heading {
     color: $color-special-orange;

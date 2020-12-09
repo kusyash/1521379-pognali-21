@@ -1,4 +1,5 @@
 .companion-travelers {
+  @include corner-radius();
   background-color: $color-basic-blue;
 
   .companion-travelers__heading {
@@ -56,10 +57,7 @@
     line-height: 14px;
   }
 
-  .companion-travelers__button-open-all {
-    text-decoration: none;
-    cursor: pointer;
-    min-width: 224px;
-    position: relative;
+  .companion-travelers__button-base {
+    padding-right: 133px;
   }
 }

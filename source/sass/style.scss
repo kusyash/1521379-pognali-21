@@ -3,10 +3,10 @@
 @import "mixins/index";
 @import "blocks/modules/visually-hidden";
 @import "blocks/modules/button-base";
-@import "blocks/modules/button-open-all";
-@import "blocks/modules/button-get-direction";
-@import "blocks/modules/button-submit";
-@import "blocks/modules/button-close";
+@import "blocks/modules/button-base--next";
+@import "blocks/modules/button-base--border";
+@import "blocks/modules/button-base--submit";
+@import "blocks/modules/button-base--switch";
 @import "blocks/layout/page";
 @import "blocks/layout/page-header";
 @import "blocks/layout/main-navigation";

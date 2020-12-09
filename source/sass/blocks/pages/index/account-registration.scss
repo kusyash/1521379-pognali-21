@@ -1,4 +1,5 @@
 .account-registration {
+  @include corner-radius();
   background-color: $color-basic-blue;
 
   .account-registration__heading {
@@ -10,12 +11,12 @@
   .account-registration__heading,
   .account-registration__desc,
   .account-registration__link,
-  .account-registration__field {
+  .form-case-inline {
     @include indents();
   }
 
   .account-registration__heading,
-  .account-registration__input {
+  .form-case-inline__input {
     font-family: $font-bold;
   }
 
@@ -36,7 +37,11 @@
     }
   }
 
-  .account-registration__input {
+  .form-case-inline {
+    display: flex;
+  }
+
+  .form-case-inline__input {
     font-size: 18px;
     background-color: $color-white;
     border-top-left-radius: 10px;
@@ -49,9 +54,5 @@
     &::placeholder {
       opacity: 0.3;
     }
-  }
-
-  .account-registration__button-submit {
-    cursor: pointer;
   }
 }

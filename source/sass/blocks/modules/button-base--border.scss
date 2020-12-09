@@ -1,17 +1,7 @@
-.button-get-direction {
-  $button-get-direction-height: 62px;
-  font-family: $font-bold;
-  font-weight: 800;
-  font-size: 18px;
+.button-base--border {
   color: $color-basic-blue;
-  background-color: $color-yellow;
-  padding: 0 19px;
-  position: relative;
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
+  padding-left: 19px;
   border: 3px solid $color-basic-blue;
-  outline: none;
   line-height: 56px;
   border-radius: 20px;
 

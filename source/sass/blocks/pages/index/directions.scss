@@ -1,4 +1,5 @@
 .directions {
+  @include corner-radius();
   background-color: $color-basic-blue-grey;
 
   .directions__heading {
@@ -37,8 +38,7 @@
     opacity: 0.3;
   }
 
-  .directions__button-open-all {
-    min-width: 270px;
-    position: relative;
+  .directions__button-base {
+    padding-right: 141px;
   }
 }
