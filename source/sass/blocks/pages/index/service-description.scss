@@ -1,0 +1,20 @@
+.service-description {
+  @include main-block-bottom();
+  background-color: $color-basic-blue;
+
+  .service-description__heading {
+    color: $color-special-orange;
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .service-description__heading,
+  .service-description__desc {
+    @include indents();
+  }
+
+  .service-description__desc {
+    color: $color-white;
+  }
+}

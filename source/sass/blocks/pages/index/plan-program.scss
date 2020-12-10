@@ -1,0 +1,17 @@
+.plan-program {
+  .plan-program__item {
+    background-color: $color-yellow-darker;
+
+    &:first-child {
+      background-color: $color-special-orange;
+    }
+
+    &:nth-child(2) {
+      background-color: $color-special-orange-lighter;
+    }
+
+    &:last-child {
+      background-color: $color-yellow;
+    }
+  }
+}

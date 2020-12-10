@@ -1,0 +1,12 @@
+.price-plan__personal {
+  @include main-block-bottom();
+  background-color: $color-basic-blue-grey;
+
+  .price-plan__link {
+    @include indents();
+    color: $color-basic-blue-lightest;
+    font-family: $font-bold;
+    line-height: 16px;
+    text-decoration: none;
+  }
+}

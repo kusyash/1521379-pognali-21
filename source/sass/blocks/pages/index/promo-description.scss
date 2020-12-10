@@ -1,0 +1,40 @@
+.promo-description {
+  background-color: $color-blue-dark;
+
+  .promo-description__heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .promo-description__heading,
+  .promo-description__user-list,
+  .promo-description__review,
+  .promo-description__quote,
+  .promo-description__quote-author,
+  .promo-description__plan-program-list,
+  .promo-description__plan-program {
+    @include indents();
+  }
+
+  .promo-description__heading,
+  .promo-description__quote,
+  .promo-description__quote-author {
+    color: $color-white;
+  }
+
+  .promo-description__heading,
+  .promo-description__quote-author,
+  .promo-description__plan-program {
+    font-family: $font-bold;
+  }
+
+  .promo-description__quote-author {
+    font-style: normal;
+  }
+
+  .promo-description__plan-program {
+    font-size: 18px;
+    line-height: 18px;
+    color: $color-basic-blue-darkest;
+  }
+}

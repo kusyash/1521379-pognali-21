@@ -1,0 +1,57 @@
+.account-registration {
+  background-color: $color-basic-blue;
+
+  .account-registration__heading {
+    color: $color-special-orange;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .account-registration__heading,
+  .account-registration__desc,
+  .account-registration__link,
+  .form-case-inline {
+    @include indents();
+  }
+
+  .account-registration__heading,
+  .form-case-inline__input {
+    font-family: $font-bold;
+  }
+
+  .account-registration__desc {
+    color: $color-white;
+  }
+
+  .account-registration__link {
+    color: $color-yellow;
+
+    &:hover {
+      color: $color-special-orange-dark;
+    }
+
+    &:active,
+    &:focus {
+      color: $color-special-orange-dark-a3;
+    }
+  }
+
+  .form-case-inline {
+    display: flex;
+  }
+
+  .form-case-inline__input {
+    font-size: 18px;
+    background-color: $color-white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    height: 62px;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
+  }
+}

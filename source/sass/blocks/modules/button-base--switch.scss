@@ -1,0 +1,16 @@
+.button-base--switch {
+  $button-base--switch-height: 59px;
+  font-size: 16px;
+  color: $color-basic-blue-lighter;
+  background-color: $color-basic-blue-grey-light;
+  padding: 0 80px;
+  line-height: $button-base--switch-height;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  &:hover {
+    background-color: $color-basic-blue-grey;
+  }
+}

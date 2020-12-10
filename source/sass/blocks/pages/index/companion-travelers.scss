@@ -1,0 +1,63 @@
+.companion-travelers {
+  @include main-block-bottom();
+  background-color: $color-basic-blue;
+
+  .companion-travelers__heading {
+    color: $color-special-orange;
+  }
+
+  .companion-travelers__heading,
+  .companion-travelers__desc,
+  .companion-travelers__list,
+  .companion-travelers__subtitle,
+  .companion-travelers__desc-item,
+  .companion-travelers__levels-number,
+  .companion-travelers__levels-text {
+    @include indents();
+  }
+
+  .companion-travelers__heading,
+  .companion-travelers__levels-number {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: $font-bold;
+  }
+
+  .companion-travelers__levels-number,
+  .companion-travelers__show-all {
+    font-family: $font-bold;
+  }
+
+  .companion-travelers__desc,
+  .companion-travelers__levels-number,
+  .companion-travelers__levels-text {
+    color: $color-white;
+  }
+
+  .companion-travelers__subtitle {
+    color: $color-basic-blue-lighter;
+    font-family: $font-bold;
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .companion-travelers__tag {
+    font-family: $font-medium;
+    color: $color-special-grey;
+    text-decoration: none;
+  }
+
+  .companion-travelers__item {
+    background-color: $color-white;
+  }
+
+  .companion-travelers__levels-text {
+    font-family: $font-medium;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .companion-travelers__button-base {
+    padding-right: 133px;
+  }
+}

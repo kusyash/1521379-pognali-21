@@ -1,0 +1,9 @@
+.button-base--submit {
+  margin-left: -10px;
+  padding-left: 22px;
+
+  &::before {
+    right: 12px;
+    top: 1px;
+  }
+}

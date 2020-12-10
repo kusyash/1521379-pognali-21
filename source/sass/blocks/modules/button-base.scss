@@ -1,0 +1,26 @@
+.button-base {
+  $button-base-height: 50px;
+  font-family: $font-bold;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $color-basic-blue-darkest;
+  background-color: $color-yellow;
+  padding: 0 40px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  line-height: $button-base-height;
+  border-radius: $button-base-height / 2;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-yellow-darker;
+  }
+
+  &:active,
+  &:focus {
+    color: $color-blue-a3;
+  }
+}

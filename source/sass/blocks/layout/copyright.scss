@@ -1,0 +1,26 @@
+.copyright {
+  .copyright__desc {
+    color: $color-special-grey;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-special-grey-a6;
+    }
+
+    &:active,
+    &:focus {
+      color: $color-special-grey-a3;
+    }
+
+    .copyright__logo {
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active,
+      &:focus {
+        opacity: 0.3;
+      }
+    }
+  }
+}

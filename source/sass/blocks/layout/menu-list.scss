@@ -1,0 +1,22 @@
+.menu-list {
+  @include indents();
+
+  .menu-list__link {
+    font-family: $font-medium;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $color-basic-blue;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-yellow;
+    }
+
+    &:active,
+    &:focus {
+      color: $color-yellow-a3;
+    }
+  }
+}

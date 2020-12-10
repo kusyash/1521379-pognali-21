@@ -1,0 +1,30 @@
+.company-contacts {
+  @include main-block-bottom();
+  background-color: $color-basic-blue;
+
+  .user-list__link {
+    color: $color-yellow;
+    text-decoration: none;
+  }
+
+  .company-contacts__user-list,
+  .company-contacts__adress {
+    @include indents();
+  }
+
+  .company-contacts__content {
+    @include main-block-bottom();
+    background-color: $color-yellow;
+  }
+
+  .company-contacts__adress {
+    color: $color-basic-blue-lighter;
+    font-family: $font-bold;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+
+  .company-contacts__button-base {
+    padding-right: 77px;
+  }
+}

@@ -1,0 +1,23 @@
+.page {
+  height: 100%;
+  box-sizing: border-box;
+
+  .page__body {
+    @include indents();
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    min-height: 100%;
+    font-family: $font-normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-special-grey;
+  }
+
+  img {
+    max-width: 100%;
+    /*height: auto;*/
+  }
+}

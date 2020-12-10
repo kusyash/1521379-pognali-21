@@ -1,0 +1,44 @@
+.directions {
+  @include main-block-bottom();
+  background-color: $color-basic-blue-grey;
+
+  .directions__heading {
+    color: $color-special-orange;
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .directions__heading,
+  .directions__desc,
+  .directions__list,
+  .directions__subtitle,
+  .directions__slogan,
+  .directions__counter-users {
+    @include indents();
+  }
+
+  .directions__subtitle {
+    color: $color-black;
+    font-family: $font-bold;
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .directions__slogan {
+    font-family: $font-medium;
+    line-height: 18px;
+    opacity: 0.3;
+  }
+
+  .directions__counter-users {
+    color: $color-basic-blue-darkest;
+    font-family: $font-medium;
+    line-height: 20px;
+    opacity: 0.3;
+  }
+
+  .directions__button-base {
+    padding-right: 141px;
+  }
+}
