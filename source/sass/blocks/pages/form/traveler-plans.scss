@@ -1,5 +1,5 @@
 .traveler-plans {
-  @include main-block-top();
+  @include form-block();
   color: $color-basic-blue-lighter;
   background-color: $color-basic-blue-grey-dark;
 
@@ -15,8 +15,8 @@
   }
 
   .traveler-plans__item {
+    @include form-block-child();
     background-color: $color-white;
-    border-radius: 10px;
   }
 
   .traveler-plans__subtitle {

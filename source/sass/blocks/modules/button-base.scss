@@ -1,5 +1,6 @@
 .button-base {
-  $button-base-height: 50px;
+  $button-base-height: 40px;
+  $button-base-radius-modifier: 5px;
   font-family: $font-bold;
   font-weight: 800;
   font-size: 20px;
@@ -11,7 +12,7 @@
   outline: none;
   display: inline-block;
   line-height: $button-base-height;
-  border-radius: $button-base-height / 2;
+  border-radius: $button-base-height / 2 + $button-base-radius-modifier;
   cursor: pointer;
   text-decoration: none;
 
@@ -71,15 +72,11 @@
     }
   }
 
-  &.button-base--movement-next,
-  &.button-base--movement-previous {
-    $button-base--movement-height: 40px;
-    line-height: $button-base--movement-height;
-    border-radius: $button-base--movement-height / 2;
-    padding: 0 30px;
+  &.button-base--radius-half {
+    $button-base-radius-modifier: 0;
   }
 
-  &.button-base--movement-previous {
+  &.button-base--light {
     background-color: $color-white;
 
     &:hover {

@@ -5,9 +5,10 @@
   }
 
   .entertainment-schedule__text {
-    &::placeholder {
-      font-size: 16px;
-      color: $color-special-grey;
-    }
+    resize: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: $color-special-grey;
   }
 }

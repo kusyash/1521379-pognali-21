@@ -27,5 +27,11 @@
       background-color: $color-basic-blue-lighter;
       border-color: $color-basic-blue-lighter;
     }
+
+    &.alphabet-sorting__meaning--active {
+      color: inherit;
+      background-color: $color-basic-blue-grey;
+      border-color: $color-basic-blue-grey;
+    }
   }
 }

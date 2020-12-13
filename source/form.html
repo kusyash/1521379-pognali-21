@@ -61,6 +61,7 @@
         <h1 class="page-main__heading">Направления</h1>
       </section>
       <section class="directions-information">
+        <h2 class="visually-hidden">Форма выбора направлений</h2>
         <section class="directions-information__traveler-profile traveler-profile">
           <h2 class="visually-hidden">Информация о Вас</h2>
           <div class="traveler-profile__interpretation">
@@ -74,8 +75,8 @@
             </div>
             <div class="traveler-profile__contents">
               <fieldset class="traveler-profile__desc-field">
-                <legend class="traveler-profile__label" for="tags-field">Тэги</legend>
-                <label class="traveler-profile__tags" id="tags-field" name="traveler-tags">#бургер #бар #футбол #концерт #крафт</label>
+                <legend class="traveler-profile__label">Тэги</legend>
+                <label class="traveler-profile__tags">#бургер #бар #футбол #концерт #крафт</label>
               </fieldset>
               <fieldset class="traveler-profile__desc-field">
                 <legend class="traveler-profile__label">Транспорт</legend>
@@ -164,14 +165,14 @@
                 <button class="traveler-calendar__button traveler-calendar__button--back" type="button" aria-label="Назад">&lt;</button>
                 <button class="traveler-calendar__button traveler-calendar__button--forward" type="button" aria-label="Вперед">></button>
                 <table class="traveler-calendar__table">
-                  <tr>
-                    <th class="traveler-calendar__weekday">п</th>
-                    <th class="traveler-calendar__weekday">в</th>
-                    <th class="traveler-calendar__weekday">с</th>
-                    <th class="traveler-calendar__weekday">ч</th>
-                    <th class="traveler-calendar__weekday">п</th>
-                    <th class="traveler-calendar__weekend">с</th>
-                    <th class="traveler-calendar__weekend">в</th>
+                  <tr class="traveler-calendar__weekday">
+                    <th>п</th>
+                    <th>в</th>
+                    <th>с</th>
+                    <th>ч</th>
+                    <th>п</th>
+                    <th>с</th>
+                    <th>в</th>
                   </tr>
                   <tr class="traveler-calendar__day">
                     <td>
@@ -187,16 +188,16 @@
                       <label class="traveler-calendar__label" for="2019-02-25">25</label>
                     </td>
                     <td>
-                      <input class="visually-hidden" type="checkbox" name="date" id="2019-03-26" value="2019-02-26" disabled>
-                      <label class="traveler-calendar__label" for="2019-03-26">26</label>
+                      <input class="visually-hidden" type="checkbox" name="date" id="2019-02-26" value="2019-02-26" disabled>
+                      <label class="traveler-calendar__label" for="2019-02-26">26</label>
                     </td>
                     <td>
-                      <input class="visually-hidden" type="checkbox" name="date" id="2019-03-27" value="2019-02-27" disabled>
-                      <label class="traveler-calendar__label" for="2019-03-27">27</label>
+                      <input class="visually-hidden" type="checkbox" name="date" id="2019-02-27" value="2019-02-27" disabled>
+                      <label class="traveler-calendar__label" for="2019-02-27">27</label>
                     </td>
                     <td>
-                      <input class="visually-hidden" type="checkbox" name="date" id="2019-03-28" value="2019-02-28" disabled>
-                      <label class="traveler-calendar__label" for="2019-03-28">28</label>
+                      <input class="visually-hidden" type="checkbox" name="date" id="2019-02-28" value="2019-02-28" disabled>
+                      <label class="traveler-calendar__label" for="2019-02-28">28</label>
                     </td>
                     <td>
                       <input class="visually-hidden" type="checkbox" name="date" id="2019-03-01" value="2019-03-01" disabled>
@@ -312,7 +313,7 @@
                     </td>
                     <td>
                       <input class="visually-hidden" type="checkbox" name="date" id="2019-03-27" value="2019-03-27" checked>
-                      <label class="traveler-calendar__label" for="">27</label>
+                      <label class="traveler-calendar__label" for="2019-03-27">27</label>
                     </td>
                     <td>
                       <input class="visually-hidden" type="checkbox" name="date" id="2019-03-28" value="2019-03-28" checked>
@@ -391,8 +392,8 @@
                   <div class="form-case-country">
                     <label class="form-case-alphabet-dropdown__label form-case-country__label">
                       <input class="form-case-alphabet-dropdown__input" type="text" name="country[2]" placeholder="Выберите страну">
-                      <button class="form-case-alphabet-dropdown__close" type="button" aria-label="Закрыть выбор страны"></button>
                     </label>
+                    <button class="form-case-alphabet-dropdown__close" type="button" aria-label="Закрыть выбор страны"></button>
                     <div class="form-base-label form-case-country__flag"></div>
                     <button class="form-case-country__remove" type="button" aria-label="Удалить страну"></button>
                   </div>
@@ -499,8 +500,8 @@
                 </li>
               </ul>
               <div class="tour-step__switch-buttons">
-                <a class="button-base button-base--movement-next" href="#">Следующий шаг</a>
-                <a class="button-base button-base--movement-previous" href="#">На шаг назад</a>
+                <a class="button-base button-base--radius-half" href="#">Следующий шаг</a>
+                <a class="button-base button-base--light" href="#">На шаг назад</a>
               </div>
             </fieldset>
             <fieldset class="tour-step__step">
@@ -519,8 +520,8 @@
                   </textarea>
                 </li>
               </ul>
-              <button class="button-base button-base--movement-next button-base--action" type="submit">Отправить</button>
-              <a class="button-base button-base--movement-previous" href="#">На шаг назад</a>
+              <button class="button-base button-base--radius-half button-base--action" type="submit">Отправить</button>
+              <a class="button-base button-base--light" href="#">На шаг назад</a>
             </fieldset>
           </form>
         </section>
