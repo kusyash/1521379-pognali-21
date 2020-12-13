@@ -1,0 +1,40 @@
+.traveler-calendar {
+  font-size: 14px;
+
+  .traveler-calendar__subtitle {
+    font-family: $font-bold;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .traveler-calendar__weekday,
+  .traveler-calendar__day {
+    color: $color-special-grey;
+  }
+
+  .traveler-calendar__weekday,
+  .traveler-calendar__weekend {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .traveler-calendar__weekend {
+    color: $color-special-red-light;
+  }
+
+  .traveler-calendar__label {
+    display: block;
+    width: 100%;
+    background-color: $color-basic-blue-grey;
+  }
+
+  input:disabled + .traveler-calendar__label {
+    background-color: $color-white;
+    color: $color-special-grey-a3;
+  }
+
+  input:checked + .traveler-calendar__label {
+    color: $color-white;
+    background-color: $color-basic-blue-lighter;
+  }
+}

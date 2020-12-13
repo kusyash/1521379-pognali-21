@@ -1,0 +1,33 @@
+.tour-step {
+  @include main-block-top();
+  color: $color-basic-blue-lighter;
+  background-color: $color-basic-blue-grey-darker;
+
+  .tour-step__heading {
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .tour-step__step {
+    @include indents();
+    background-color: $color-white;
+    border-radius: 10px;
+    border: 0;
+  }
+
+  .tour-step__subtitle {
+    font-family: $font-bold;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .tour-step__desc {
+    color: $color-special-grey;
+  }
+
+  .tour-step__value-area-list,
+  .tour-step__entertainment-list {
+    @include indents();
+  }
+}

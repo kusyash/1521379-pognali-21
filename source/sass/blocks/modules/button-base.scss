@@ -71,6 +71,31 @@
     }
   }
 
+  &.button-base--movement-next,
+  &.button-base--movement-previous {
+    $button-base--movement-height: 40px;
+    line-height: $button-base--movement-height;
+    border-radius: $button-base--movement-height / 2;
+    padding: 0 30px;
+  }
+
+  &.button-base--movement-previous {
+    background-color: $color-white;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+
+  &.button-base--action {
+    padding: 0 63px;
+  }
+
   &.button-base--border {
     color: $color-basic-blue;
     padding-left: 19px;
@@ -95,6 +120,54 @@
       font-size: 40px;
       border: none;
       right: 8px;
+    }
+  }
+
+  &.button-base--grey {
+    $button-base--grey-height: 40px;
+    background-color: $color-basic-blue-grey-dark;
+    line-height: $button-base--grey-height;
+    border-radius: $button-base--grey-height / 2;
+
+    &:hover {
+      background-color: $color-basic-blue-grey-darker;
+    }
+  }
+
+  &.button-base--toggle {
+    font-family: $font-medium;
+    background-color: $color-white;
+    color: $color-black;
+    opacity: 0.3;
+    border: none;
+    padding: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.1;
+    }
+  }
+
+  &.button-base--add {
+    font-family: $font-medium;
+    color: $color-basic-blue-lighter;
+    background-color: $color-white;
+    opacity: 1;
+    border-radius: 0;
+    padding: 0 29px;
+
+    &:hover {
+      background-color: $color-basic-blue-grey-dark;
+    }
+
+    &:active,
+    &:focus {
+      background-color: $color-basic-blue-grey-dark;
+      opacity: 1;
     }
   }
 }

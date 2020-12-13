@@ -1,0 +1,9 @@
+.alphabet-dropdown {
+  .alphabet-dropdown__list {
+    @include indents();
+
+    .alphabet-dropdown__item {
+      color: $color-special-grey;
+    }
+  }
+}
