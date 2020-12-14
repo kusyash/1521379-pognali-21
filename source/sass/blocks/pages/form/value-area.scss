@@ -1,0 +1,15 @@
+.value-area {
+  line-height: 16px;
+  font-family: $font-medium;
+  text-transform: uppercase;
+
+  .value-area__desc,
+  .value-area__text {
+    position: relative;
+    align-self: center;
+  }
+
+  .value-area__text {
+    opacity: 0.3;
+  }
+}

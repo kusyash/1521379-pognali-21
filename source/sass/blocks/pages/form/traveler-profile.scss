@@ -1,0 +1,25 @@
+.traveler-profile {
+  .traveler-profile__label {
+    position: relative;
+    align-self: center;
+    font-family: $font-bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-basic-blue-lighter;
+    text-transform: uppercase;
+  }
+
+  .traveler-profile__label,
+  .traveler-profile__transport-list {
+    @include indents();
+  }
+
+  .traveler-profile__tags {
+    color: $color-special-grey-a6;
+  }
+
+  .traveler-profile__desc-field {
+    border: 1px solid $color-basic-blue-grey-darkest;
+    border-radius: 10px;
+  }
+}

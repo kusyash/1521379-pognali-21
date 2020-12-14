@@ -1,0 +1,31 @@
+.traveler-plans {
+  @include form-block();
+  color: $color-basic-blue-lighter;
+  background-color: $color-basic-blue-grey-dark;
+
+  .traveler-plans__heading {
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .traveler-plans__heading,
+  .traveler-plans__list {
+    @include indents();
+  }
+
+  .traveler-plans__item {
+    @include form-block-child();
+    background-color: $color-white;
+  }
+
+  .traveler-plans__subtitle {
+    font-size: 16px;
+  }
+
+  .traveler-plans__desc {
+    font-family: $font-medium;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,14 @@
+.entertainment-schedule {
+  .entertainment-schedule__country-name {
+    font-family: $font-medium;
+    font-size: 18px;
+  }
+
+  .entertainment-schedule__text {
+    resize: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    color: $color-special-grey;
+  }
+}

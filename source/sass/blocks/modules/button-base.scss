@@ -1,5 +1,6 @@
 .button-base {
-  $button-base-height: 50px;
+  $button-base-height: 40px;
+  $button-base-radius-modifier: 5px;
   font-family: $font-bold;
   font-weight: 800;
   font-size: 20px;
@@ -11,7 +12,7 @@
   outline: none;
   display: inline-block;
   line-height: $button-base-height;
-  border-radius: $button-base-height / 2;
+  border-radius: $button-base-height / 2 + $button-base-radius-modifier;
   cursor: pointer;
   text-decoration: none;
 
@@ -22,5 +23,148 @@
   &:active,
   &:focus {
     color: $color-blue-a3;
+  }
+
+  &.button-base--next {
+    $button-base--next-height: 62px;
+    font-size: 18px;
+    text-transform: inherit;
+    color: $color-basic-blue-lighter;
+    padding-left: 24px;
+    position: relative;
+    line-height: $button-base--next-height;
+    border-radius: $button-base--next-height / 6.2;
+
+    &::before {
+      content: "▸";
+      display: block;
+      position: absolute;
+      font-size: 40px;
+      border: none;
+      right: 23px;
+    }
+  }
+
+  &.button-base--submit {
+    margin-left: -10px;
+    padding-left: 22px;
+
+    &::before {
+      right: 12px;
+      top: 1px;
+    }
+  }
+
+  &.button-base--switch {
+    $button-base--switch-height: 59px;
+    font-size: 16px;
+    color: $color-basic-blue-lighter;
+    background-color: $color-basic-blue-grey-light;
+    padding: 0 80px;
+    line-height: $button-base--switch-height;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    &:hover {
+      background-color: $color-basic-blue-grey;
+    }
+  }
+
+  &.button-base--radius-half {
+    $button-base-radius-modifier: 0;
+  }
+
+  &.button-base--light {
+    background-color: $color-white;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+
+  &.button-base--action {
+    padding: 0 63px;
+  }
+
+  &.button-base--border {
+    color: $color-basic-blue;
+    padding-left: 19px;
+    border: 3px solid $color-basic-blue;
+    line-height: 56px;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: $color-basic-blue;
+      color: $color-white;
+    }
+
+    &:active,
+    &:focus {
+      color: $color-white-a3;
+    }
+
+    &::before {
+      content: "▸";
+      display: block;
+      position: absolute;
+      font-size: 40px;
+      border: none;
+      right: 8px;
+    }
+  }
+
+  &.button-base--grey {
+    $button-base--grey-height: 40px;
+    background-color: $color-basic-blue-grey-dark;
+    line-height: $button-base--grey-height;
+    border-radius: $button-base--grey-height / 2;
+
+    &:hover {
+      background-color: $color-basic-blue-grey-darker;
+    }
+  }
+
+  &.button-base--toggle {
+    font-family: $font-medium;
+    background-color: $color-white;
+    color: $color-black;
+    opacity: 0.3;
+    border: none;
+    padding: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.1;
+    }
+  }
+
+  &.button-base--add {
+    font-family: $font-medium;
+    color: $color-basic-blue-lighter;
+    background-color: $color-white;
+    opacity: 1;
+    border-radius: 0;
+    padding: 0 29px;
+
+    &:hover {
+      background-color: $color-basic-blue-grey-dark;
+    }
+
+    &:active,
+    &:focus {
+      background-color: $color-basic-blue-grey-dark;
+      opacity: 1;
+    }
   }
 }
