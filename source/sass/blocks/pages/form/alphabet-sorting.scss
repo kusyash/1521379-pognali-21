@@ -29,9 +29,9 @@
     }
 
     &.alphabet-sorting__meaning--active {
-      color: inherit;
-      background-color: $color-basic-blue-grey;
-      border-color: $color-basic-blue-grey;
+      color: $color-white;
+      background-color: $color-basic-blue-lighter;
+      border: none;
     }
   }
 }

@@ -1,0 +1,36 @@
+.interests {
+  @include catalog-block-filter();
+  color: $color-basic-blue;
+  background-color: $color-yellow;
+
+  .interests__transport-list,
+  .interests__heading,
+  .interests__list {
+    @include indents();
+  }
+
+  .interests__heading {
+    font-size: 22px;
+  }
+
+  .interests__heading,
+  .interests__subtitle {
+    font-family: $font-bold;
+    color: $color-basic-blue-lighter;
+  }
+
+  .interests__subtitle {
+    font-size: inherit;
+    text-transform: uppercase;
+  }
+
+  .site-filter-checkbox__label {
+    font-size: 15px;
+    color: $color-black;
+  }
+
+  .interests__desc-field {
+    border: none;
+    outline: none;
+  }
+}

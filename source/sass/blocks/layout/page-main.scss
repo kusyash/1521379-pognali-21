@@ -5,8 +5,9 @@
 
     .page-main__heading {
       @include indents();
+      font-family: $font-bold;
       font-size: 36px;
-      font-weight: 800;
+      line-height: 36px;
       color: $color-white;
     }
   }

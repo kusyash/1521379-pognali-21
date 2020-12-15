@@ -19,3 +19,28 @@ $main-layout-space: 25px;
   padding: 20px $main-layout-space $main-layout-space $main-layout-space;
   border-radius: 10px;
 }
+
+@mixin catalog-block() {
+  padding: 21px $main-layout-space 46px $main-layout-space;
+  border-radius: 0;
+}
+
+@mixin catalog-dropdown-filter() {
+  padding: $main-layout-space $main-layout-space 30px $main-layout-space;
+  border-radius: 0 0 20px 20px;
+}
+
+@mixin catalog-block-filter() {
+  padding: $main-layout-space 25px 20px 22px 20px;
+  border-radius: 20px;
+}
+
+@mixin catalog-country-filter() {
+  padding: $main-layout-space $main-layout-space 20px $main-layout-space;
+  border-radius: 0 0 50px 50px;
+}
+
+@mixin catalog-block-child() {
+  padding: 15px 15px 23px 15px;
+  border-radius: 20px;
+}
