@@ -77,13 +77,14 @@
     padding: 0 69px;
 
     &:hover {
-      filter: $color-grey-drop-shadow;
+      box-shadow: $shadow-dark-light;
     }
 
     &:active,
     &:focus {
       background-color: $color-yellow-light;
       color: $color-blue-dark-a3;
+      box-shadow: none;
     }
   }
 
@@ -97,7 +98,7 @@
   }
 
   &.button-base--light {
-    background-color: $color-white;
+    background-color: transparent;
     color: $color-basic-blue-lighter;
 
     &:hover {
@@ -110,9 +111,7 @@
     }
   }
 
-  &.button-base--lighter {
-    background-color: transparent;
-
+  &.button-base--plus {
     &:hover {
       opacity: 1;
     }
@@ -165,7 +164,7 @@
     }
   }
 
-  &.button-base--blue {
+  &.button-base--text-blue {
     padding: 0 90px;
     color: $color-basic-blue;
     background-color: $color-basic-grey-blue-light;

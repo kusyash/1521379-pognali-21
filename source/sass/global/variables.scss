@@ -14,12 +14,12 @@ $font-medium-italic: "Blogger Sans Medium Italic", sans-serif;
 
 // colors
 $color-white-a3: rgba(255, 255, 255, 0.3);
+$color-dark-a14: rgba(0, 0, 0, 0.14);
 $color-blue-a3: rgba(22, 28, 53, 0.3);
 $color-blue-dark-a3: rgba(24, 32, 68, 0.3);
 $color-special-grey-a3: rgba(68, 68, 68, 0.3);
 $color-special-grey-a6: rgba(68, 68, 68, 0.6);
 $color-basic-blue-a3: rgba(25, 33, 68, 0.3);
-$color-grey-drop-shadow: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.14));
 $color-yellow-a3: rgba(255, 215, 75, 0.3);
 $color-special-orange-dark-a3: rgba(255, 141, 48, 0.3);
 $color-black: #000000;
@@ -47,3 +47,4 @@ $color-special-orange-lighter: #ffa530;
 $color-special-orange-dark: #ff8d30;
 $color-special-red: #ff0000;
 $color-special-red-light: #ff5c23;
+$shadow-dark-light: 0 3px 6px 0 $color-dark-a14;

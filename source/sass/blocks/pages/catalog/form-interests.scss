@@ -1,25 +1,25 @@
-.interests {
+.form-interests {
   @include catalog-block-filter();
   color: $color-basic-blue;
   background-color: $color-yellow;
 
-  .interests__transport-list,
-  .interests__heading,
-  .interests__list {
+  .form-interests__transport-list,
+  .form-interests__heading,
+  .form-interests__list {
     @include indents();
   }
 
-  .interests__heading {
+  .form-interests__heading {
     font-size: 22px;
   }
 
-  .interests__heading,
-  .interests__subtitle {
+  .form-interests__heading,
+  .form-interests__subtitle {
     font-family: $font-bold;
     color: $color-basic-blue-lighter;
   }
 
-  .interests__subtitle {
+  .form-interests__subtitle {
     font-size: inherit;
     text-transform: uppercase;
   }
@@ -29,7 +29,7 @@
     color: $color-black;
   }
 
-  .interests__desc-field {
+  .form-interests__desc-field {
     border: none;
     outline: none;
   }

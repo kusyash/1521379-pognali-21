@@ -1,13 +1,17 @@
-.fellow-travelers__country-filtration {
+.fellow-travelers {
+  @include catalog-block();
+}
+
+.fellow-travelers-filter {
   @include catalog-dropdown-filter();
   color: $color-basic-blue;
   background-color: $color-basic-blue-grey-lighter;
 
-  .fellow-travelers__filter {
+  .fellow-travelers-filter__country {
     @include catalog-country-filter();
     background-color: $color-basic-blue-grey-lighter;
 
-    .fellow-travelers__heading {
+    .fellow-travelers-filter__heading {
       @include indents();
       line-height: 18px;
       font-family: $font-bold;
@@ -16,21 +20,7 @@
     }
   }
 
-  .fellow-travelers__item {
-    font-family: $font-bold;
-    font-size: inherit;
-    text-transform: uppercase;
-
-    .fellow-travelers__text {
-      opacity: 0.3;
-    }
-  }
-
-  .fellow-travelers__list {
+  .fellow-travelers-filter__list {
     @include indents();
   }
-}
-
-.fellow-travelers {
-  @include catalog-block();
 }
