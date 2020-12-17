@@ -1,0 +1,66 @@
+.sample-result {
+  color: $color-basic-blue-lighter;
+
+  .sample-result__list,
+  .sample-result__tag-list,
+  .sample-result__countries-list,
+  .sample-result__transport-list,
+  .sample-result__subtitle,
+  .sample-result__pagination-list,
+  .sample-result__desc,
+  .sample-result__text {
+    @include indents();
+  }
+
+  .sample-result__item {
+    @include catalog-block-child();
+    background-color: $color-white;
+  }
+
+  .sample-result__subtitle {
+    font-family: $font-bold;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .sample-result__like-quantity {
+    font-family: $font-bold;
+    font-size: 14px;
+    color: $color-basic-blue-darkest;
+  }
+
+  .sample-result__desc {
+    color: $color-special-grey;
+  }
+
+  .sample-result__desc,
+  .sample-result__text,
+  .sample-result__tag {
+    font-size: 15px;
+  }
+
+  .sample-result__text {
+    font-family: $font-medium;
+    text-transform: uppercase;
+  }
+
+  .sample-result__tag {
+    font-family: $font-normal;
+    line-height: 18px;
+    color: $color-special-grey;
+    text-decoration: none;
+  }
+
+  .sample-result__pagination {
+    .sample-result__pagination-link,
+    &.sample-result__pagination-link--current {
+      font-family: $font-bold;
+      color: $color-basic-blue-lighter;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

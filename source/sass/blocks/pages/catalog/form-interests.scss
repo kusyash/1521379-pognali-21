@@ -1,0 +1,36 @@
+.form-interests {
+  @include catalog-block-filter();
+  color: $color-basic-blue;
+  background-color: $color-yellow;
+
+  .form-interests__transport-list,
+  .form-interests__heading,
+  .form-interests__list {
+    @include indents();
+  }
+
+  .form-interests__heading {
+    font-size: 22px;
+  }
+
+  .form-interests__heading,
+  .form-interests__subtitle {
+    font-family: $font-bold;
+    color: $color-basic-blue-lighter;
+  }
+
+  .form-interests__subtitle {
+    font-size: inherit;
+    text-transform: uppercase;
+  }
+
+  .site-filter-checkbox__label {
+    font-size: 15px;
+    color: $color-black;
+  }
+
+  .form-interests__desc-field {
+    border: none;
+    outline: none;
+  }
+}
