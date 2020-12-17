@@ -1,9 +1,9 @@
 .menu-list {
-  @include indents();
+  @include list-reset ();
 
   .menu-list__link {
     font-family: $font-medium;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 30px;
     text-transform: uppercase;
     color: $color-basic-blue;

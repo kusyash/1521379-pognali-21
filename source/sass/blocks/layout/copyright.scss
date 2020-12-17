@@ -1,4 +1,8 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   .copyright__desc {
     color: $color-special-grey;
     text-decoration: none;
@@ -22,5 +26,13 @@
         opacity: 0.3;
       }
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    min-width: 154px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }

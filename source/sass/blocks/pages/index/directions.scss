@@ -1,6 +1,5 @@
 .directions {
   @include main-block-bottom();
-  background-color: $color-basic-blue-grey;
 
   .directions__heading {
     color: $color-special-orange;
@@ -11,11 +10,14 @@
 
   .directions__heading,
   .directions__desc,
-  .directions__list,
   .directions__subtitle,
   .directions__slogan,
   .directions__counter-users {
     @include indents();
+  }
+
+  .directions__list {
+    @include list-reset ();
   }
 
   .directions__subtitle {

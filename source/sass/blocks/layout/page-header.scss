@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: $color-blue-dark;
 
   .page-header__scroll {
@@ -36,4 +38,9 @@
       border-radius: 1.5px;
     }
   }
+}
+
+.page-header__logo {
+  height: 73px;
+  padding-top: 27px;
 }

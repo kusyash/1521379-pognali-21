@@ -1,13 +1,13 @@
 .user-list {
   &.user-list--header,
   &.user-list--contacts {
-    @include indents();
+    @include list-reset ();
 
     .user-list__link {
       &.user-list__link--header,
       &.user-list__link--contacts {
         font-family: $font-bold;
-        font-weight: 800;
+        font-weight: 700;
         text-decoration: none;
       }
 

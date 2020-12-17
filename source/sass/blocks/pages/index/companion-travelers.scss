@@ -8,12 +8,17 @@
 
   .companion-travelers__heading,
   .companion-travelers__desc,
-  .companion-travelers__list,
   .companion-travelers__subtitle,
   .companion-travelers__desc-item,
   .companion-travelers__levels-number,
   .companion-travelers__levels-text {
     @include indents();
+  }
+
+  .companion-travelers__list,
+  .companion-travelers__tag-list,
+  .companion-travelers__transport-list {
+    @include list-reset ();
   }
 
   .companion-travelers__heading,
@@ -42,7 +47,6 @@
   }
 
   .companion-travelers__tag {
-    font-family: $font-medium;
     color: $color-special-grey;
     text-decoration: none;
   }

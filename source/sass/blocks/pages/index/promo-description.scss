@@ -7,13 +7,16 @@
   }
 
   .promo-description__heading,
-  .promo-description__user-list,
   .promo-description__review,
   .promo-description__quote,
   .promo-description__quote-author,
-  .promo-description__plan-program-list,
   .promo-description__plan-program {
     @include indents();
+  }
+
+  .promo-description__user-list,
+  .promo-description__plan-program-list {
+    @include list-reset ();
   }
 
   .promo-description__heading,
