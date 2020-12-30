@@ -1,16 +1,84 @@
 .promo-description {
-  background-color: $color-blue-dark;
+  background-color: $color-basic-blue;
+  color: $color-white;
+  padding-bottom: 9px;
 
-  .promo-description__heading {
-    font-size: 36px;
-    line-height: 40px;
+  .promo-description__topic {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-left: 1px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    min-height: 397px;
+    top: 0;
+    background-color: $color-basic-blue-darkest;
+    background-image: url("../../../../img/globe-back-mobile-index.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: url("../../../../img/traveller-illustration-mobile-index.png");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
   }
 
-  .promo-description__heading,
-  .promo-description__review,
-  .promo-description__quote,
-  .promo-description__quote-author,
+  .promo-description__heading {
+    font-family: $font-bold;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .promo-description__user-links {
+    display: flex;
+    position: relative;
+    top: 20px;
+  }
+
+  .promo-description__review {
+    width: auto;
+    display: flex;
+    margin: 0;
+    padding: 48px 50px 109px;
+    flex-direction: column;
+    background-color: $color-basic-blue-darkest;
+  }
+
   .promo-description__plan-program {
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: -80px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 18px;
+    line-height: 18px;
+    color: $color-basic-blue-darkest;
+  }
+
+  .promo-description__plan-program-list {
+    counter-reset: item-counter;
+    line-height: 1;
+    font-family: $font-bold;
+    font-size: 18px;
+    color: $color-basic-blue-darkest;
+  }
+
+
+  .promo-description__heading,
+  .promo-description__quote-author {
     @include indents();
   }
 
@@ -33,11 +101,5 @@
 
   .promo-description__quote-author {
     font-style: normal;
-  }
-
-  .promo-description__plan-program {
-    font-size: 18px;
-    line-height: 18px;
-    color: $color-basic-blue-darkest;
   }
 }

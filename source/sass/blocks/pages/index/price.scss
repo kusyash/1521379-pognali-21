@@ -1,9 +1,309 @@
 .price {
-  .price__subtitle {
+  &.price--personal {
+    @include main-block-bottom();
+    position: relative;
+    margin-bottom: -30px;
+    padding-top: 67px;
+    padding-right: 25px;
+    padding-bottom: 36px;
+    padding-left: 25px;
+    background-color: $color-basic-blue-grey-bg;
+    z-index: 3;
+  }
+
+  &.price--buisness {
+    position: fixed;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 270px;
+    top: 150px;
+    right: 0;
+    left: 0;
+    margin: 19px auto 0;
+    padding-top: 32px;
+    box-shadow: $box-shadow-blue-dark-light;
+    background-color: $color-white;
+    z-index: 7;
+  }
+}
+
+.price__content {
+  position: relative;
+  padding-left: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 0;
+    top: 0;
+    background-image: url("../../../../img/rates-mobile-and-tablet-index.png");
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.price__subtitle {
+  &.price__subtitle--personal {
     @include indents();
-    color: $color-special-orange;
+    padding: 14px 98px 44px 1px;
+  }
+
+  &.price__subtitle--buisness {
+    @include indents();
+    text-align: center;
+    margin-bottom: 29px;
+  }
+
+  &.price__subtitle--personal,
+  &.price__subtitle--buisness {
+    line-height: 1;
     font-family: $font-bold;
-    font-size: 21px;
-    line-height: 21px;
+    font-size: 24px;
+    color: $color-special-orange;
+  }
+}
+
+.price__list {
+  &.price__list--personal {
+    @include indents();
+    position: relative;
+    counter-reset: rates-counter;
+    margin-bottom: 26px;
+    padding-right: 45px;
+    line-height: 1;
+    z-index: 2;
+  }
+
+  &.price__list--buisness {
+    width: 219px;
+    margin: 0 auto 34px;
+  }
+}
+
+.price__item {
+  &.price__item--personal {
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    border-top: 1px solid $color-basic-grey-light-bg;
+
+    &::after {
+      content: counter(rates-counter);
+      counter-increment: rates-counter;
+      border-radius: 50px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 34px;
+      width: 34px;
+      right: -22%;
+      top: 3px;
+      background-color: $color-yellow-darker;
+      color: $color-white;
+    }
+
+    &:nth-child(3n + 1)::after {
+      background-color: $color-special-orange;
+    }
+
+    &:nth-child(3n)::after {
+      background-color: $color-yellow;
+    }
+
+    &:last-child {
+      border-bottom: $color-basic-grey-light-bg;
+    }
+  }
+
+  &.price__item--personal dd,
+  &.price__item--buisness dd {
+    @include indents();
+  }
+
+  &.price__item--buisness {
+    padding: 11px 0 10px;
+    border-top: 1px solid $color-dark-a05;
+  }
+}
+
+.price__link {
+  @include indents();
+  color: $color-basic-blue-lightest;
+  font-family: $font-bold;
+  line-height: 1;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    &.price--personal {
+      padding-bottom: 45px;
+      padding-top: 130px;
+      background-color: #edeff6;
+    }
+  }
+
+  .price__content {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 19px;
+    max-width: 1178px;
+
+
+    &::after {
+      top: auto;
+      bottom: 0;
+      right: 6.5%;
+    }
+  }
+
+  .price__subtitle {
+    &.price__subtitle--personal {
+      padding: 0;
+      margin-bottom: 36px;
+      text-align: center;
+    }
+  }
+
+  .price__list {
+    &.price__list--personal {
+      z-index: 0;
+      padding: 40px 5.09% 33px 13.08%;
+      margin-bottom: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: -14px;
+
+        width: 29%;
+
+        background-color: #e2e5f2;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .price__item {
+    &.price__item--personal {
+      display: flex;
+      justify-content: space-between;
+
+      padding-top: 18px;
+      padding-bottom: 19px;
+
+      dt {
+        margin-bottom: 0;
+      }
+
+      &::after {
+        top: 0;
+        left: -16%;
+        right: auto;
+
+        width: 68px;
+        height: 68px;
+      }
+
+      &:first-child::after {
+        top: -2px;
+      }
+
+      &:last-child::after {
+        top: 2px;
+      }
+    }
+  }
+
+  .price__link {
+    position: relative;
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    padding: 26px 22% 22px 13%;
+    font-size: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 68px;
+      height: 68px;
+
+      background-color: #e2e5f2;
+      border-radius: 50%;
+      background-image: url("../../../../img/icon-businessman.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 27px 27px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    &.price--personal {
+      padding-bottom: 166px;
+      padding-top: 163px;
+    }
+  }
+
+  .price__content {
+    margin: 0 auto;
+    padding-bottom: 0;
+    width: 1178px;
+
+    &::after {
+      height: 198px;
+      width: 198px;
+      top: 184px;
+      right: 2px;
+      left: auto;
+      background-image: url("../../../../img/rates-desktop-index.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../../img/rates-desktop-index.png");
+      }
+    }
+  }
+
+  .price__subtitle {
+    &.price__subtitle--personal {
+      margin-bottom: 87px;
+    }
+  }
+
+  .price__list {
+    &.price__list--personal {
+      margin-right: 113px;
+      padding: 50px 161px 32px 90px;
+
+      &::before {
+        bottom: -19px;
+        width: 446px;
+      }
+    }
+  }
+
+  .price__item {
+    &.price__item--personal {
+      &::after {
+        left: -91px;
+        top: 0;
+      }
+    }
+  }
+
+  .price__link {
+    padding: 25px 0 23px 89px;
+    width: 50%;
   }
 }

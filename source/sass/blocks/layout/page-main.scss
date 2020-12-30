@@ -1,4 +1,6 @@
 .page-main {
+  position: relative;
+
   .page-main__header {
     @include main-block-bottom();
     background-color: $color-blue-dark;

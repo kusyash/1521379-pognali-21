@@ -1,30 +1,56 @@
 .company-contacts {
-  @include main-block-bottom();
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 0 0 30px 30px;
   background-color: $color-basic-blue;
+  background-image: url("../../../../img/background_map-mobile-index.png");
+  background-position: center;
+  background-size: 320px 424px;
+  background-repeat: no-repeat;
+}
 
-  .user-list__link {
-    color: $color-yellow;
-    text-decoration: none;
-  }
+.company-contacts__description {
+  @include main-block-bottom();
+  position: relative;
+  order: 2;
+  margin-bottom: -30px;
+  padding-top: 62px;
+  background-color: $color-yellow;
+  color: $color-basic-blue-lighter;
+  z-index: 1;
+}
 
-  .company-contacts__user-list {
-    @include list-reset ();
-  }
+.company-contacts__map {
+  width: 100%;
+  height: 322px;
+  background-image: url("../../../../img/icon-marker-map-mobile.svg"), url("../../../../img/background-map-mobile-index.png");
+  background-position: 55% 35%, 50% 50%;
+  background-size: 41px 41px, cover;
+  background-repeat: no-repeat;
+}
 
-  .company-contacts__content {
-    @include main-block-bottom();
-    background-color: $color-yellow;
-  }
+.company-contacts__adress {
+  @include indents();
+  position: relative;
+  font-family: $font-bold;
+  text-transform: uppercase;
+  font-style: normal;
+  margin-bottom: 33px;
+  padding-right: 40px;
+  padding-left: 61px;
 
-  .company-contacts__adress {
-    @include indents();
-    color: $color-basic-blue-lighter;
-    font-family: $font-bold;
-    text-transform: uppercase;
-    font-style: normal;
-  }
-
-  .company-contacts__button-base {
-    padding-right: 77px;
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    left: 0;
+    top: -1px;
+    background-image: url("../../../../img/vector-marker.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 21px;
+    background-position: 15px 12px;
+    background-color: $color-special-blue-darker;
   }
 }

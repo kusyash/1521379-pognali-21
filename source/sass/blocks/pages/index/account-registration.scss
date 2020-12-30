@@ -1,57 +1,85 @@
 .account-registration {
+  position: relative;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: -30px;
+  padding-top: 100px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
   background-color: $color-basic-blue;
+  color: $color-white;
+  z-index: 2;
+}
 
-  .account-registration__heading {
-    color: $color-special-orange;
-    font-size: 24px;
-    line-height: 24px;
+.account-registration__heading {
+  @include indents();
+  margin-bottom: 20px;
+  text-align: center;
+  color: $color-special-orange;
+  font-family: $font-bold;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.account-registration__desc {
+  @include indents();
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+
+  &.account-registration__desc--sign-in {
+    margin-bottom: 25px;
   }
 
-  .account-registration__heading,
-  .account-registration__desc,
-  .account-registration__link,
-  .form-case-inline {
-    @include indents();
+  &.account-registration__desc--feedback {
+    margin-bottom: 17px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.account-registration__link,
+.account-registration__form-case {
+  @include indents();
+}
+
+
+.account-registration__link {
+  color: $color-yellow;
+
+  &:hover {
+    color: $color-special-orange-dark;
   }
 
-  .account-registration__heading,
-  .form-case-inline__input {
-    font-family: $font-bold;
+  &:active,
+  &:focus {
+    color: $color-special-orange-dark-a3;
   }
+}
 
-  .account-registration__desc {
-    color: $color-white;
-  }
+.account-registration__form {
+  display: grid;
+  align-content: stretch;
+  grid-template-columns: 230px 40px;
+  width: 100%;
+  margin-bottom: 28px;
+}
 
-  .account-registration__link {
-    color: $color-yellow;
+.account-registration__form-case {
+  display: flex;
+}
 
-    &:hover {
-      color: $color-special-orange-dark;
-    }
+.account-registration__input {
+  font-family: $font-bold;
+  font-size: 18px;
+  background-color: $color-white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  height: 62px;
 
-    &:active,
-    &:focus {
-      color: $color-special-orange-dark-a3;
-    }
-  }
-
-  .form-case-inline {
-    display: flex;
-  }
-
-  .form-case-inline__input {
-    font-size: 18px;
-    background-color: $color-white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: none;
-    outline: none;
-    padding: 0 25px;
-    height: 62px;
-
-    &::placeholder {
-      opacity: 0.3;
-    }
+  &::placeholder {
+    opacity: 0.3;
   }
 }

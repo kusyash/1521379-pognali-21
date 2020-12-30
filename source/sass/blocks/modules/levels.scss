@@ -1,24 +1,51 @@
-.levels--main {
-  color: $color-white;
+.levels {
+  position: relative;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5px;
+  line-height: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &.levels--main {
+    color: $color-white;
+    background-color: $color-special-grey-dark-a6;
+  }
+
+  &.levels--99 {
+    background-image: url("./../../../img/circle-progress-bar-99.svg");
+  }
+
+  &.levels--80 {
+    background-image: url("./../../../img/circle-progress-bar-80.svg");
+  }
 }
 
-.levels--form {
-  .levels__number {
-    font-family: $font-bold;
-    font-size: 38px;
-    line-height: 38px;
-    color: $color-basic-blue-darkest;
-  }
+.levels__number {
+  margin: 0;
+  padding: 0 3px;
+  border-bottom: 1px solid $color-white-a3;
+  font-family: $font-bold;
+  font-size: 24px;
+  line-height: 22px;
+}
 
-  .levels__number,
-  .levels__text {
-    @include indents();
-  }
-
-  .levels__text {
-    font-family: $font-normal;
-    font-size: 18px;
-    line-height: 18px;
-    color: $color-special-grey;
-  }
+.levels__text {
+  margin: 0;
+  padding: 2px 0 0 0;
+  font-family: $font-normal;
+  font-size: 14px;
 }

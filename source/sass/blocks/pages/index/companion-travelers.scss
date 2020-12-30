@@ -1,67 +1,175 @@
 .companion-travelers {
   @include main-block-bottom();
+  position: relative;
   background-color: $color-basic-blue;
+  color: $color-white;
+  margin-bottom: -30px;
+  padding-top: 64px;
+  padding-bottom: 31px;
+  z-index: 4;
+}
 
-  .companion-travelers__heading {
-    color: $color-special-orange;
+.companion-travelers__description {
+  position: relative;
+  padding-top: 32px;
+  background-image: url("../../../../img/smolov-back-desktop.png");
+  background-position: 100% top;
+  background-size: 143px 143px;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    height: 132px;
+    width: 132px;
+    right: 182px;
+    top: 0;
+    background-color: $color-special-blue-dark;
+    z-index: -1;
   }
+}
 
-  .companion-travelers__heading,
-  .companion-travelers__desc,
-  .companion-travelers__subtitle,
-  .companion-travelers__desc-item,
-  .companion-travelers__levels-number,
-  .companion-travelers__levels-text {
-    @include indents();
+.companion-travelers__content {
+  position: relative;
+  margin-bottom: 55px;
+  padding: 0 25px 0 25px;
+  z-index: 2;
+}
+
+.companion-travelers__heading {
+  font-family: $font-bold;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0 0 19px 0;
+  color: $color-special-orange;
+}
+
+.companion-travelers__desc {
+  color: $color-white;
+  margin: 0 0 21px 0;
+}
+
+.companion-travelers__tagline {
+  font-family: $font-bold;
+}
+
+.companion-travelers__list {
+  @include list-reset ();
+  position: relative;
+  width: 270px;
+  margin: 0 auto 19px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    height: 71px;
+    width: 71px;
+    left: -36px;
+    top: -32px;
+    background-image: url("../../../../img/rogovaya-back-mobile.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+}
 
-  .companion-travelers__list,
-  .companion-travelers__tag-list,
-  .companion-travelers__transport-list {
-    @include list-reset ();
-  }
+.companion-travelers__item {
+  position: relative;
+  margin-bottom: 9px;
+}
 
-  .companion-travelers__heading,
-  .companion-travelers__levels-number {
-    font-size: 24px;
-    line-height: 24px;
-    font-family: $font-bold;
-  }
+.companion-travelers__card {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  padding-bottom: 22px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $color-white;
+  color: $color-special-grey;
+}
 
-  .companion-travelers__levels-number,
-  .companion-travelers__show-all {
-    font-family: $font-bold;
-  }
+.companion-travelers__tourist-info {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding-top: 25px;
+}
 
-  .companion-travelers__desc,
-  .companion-travelers__levels-number,
-  .companion-travelers__levels-text {
-    color: $color-white;
-  }
+.companion-travelers__levels {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  left: 17px;
+  top: 17px;
+}
 
-  .companion-travelers__subtitle {
-    color: $color-basic-blue-lighter;
-    font-family: $font-bold;
-    font-size: 21px;
-    line-height: 21px;
-  }
+.companion-travelers__desc-item {
+  @include indents();
+}
 
-  .companion-travelers__tag {
-    color: $color-special-grey;
-    text-decoration: none;
-  }
+.companion-travelers__show-all {
+  font-family: $font-bold;
+}
 
-  .companion-travelers__item {
-    background-color: $color-white;
-  }
+.companion-travelers__subtitle {
+  @include indents();
+  color: $color-basic-blue-lighter;
+  font-family: $font-bold;
+  font-size: 21px;
+  line-height: 1;
+  margin-left: 10px;
+  padding-right: 16px;
+}
 
-  .companion-travelers__levels-text {
-    font-family: $font-medium;
-    font-size: 14px;
-    line-height: 14px;
-  }
+.companion-travelers__flag-list {
+  position: absolute;
+  margin: 0 auto;
+  top: 259px;
+  right: 0;
+  left: 0;
+}
 
-  .companion-travelers__button-base {
-    padding-right: 133px;
+.companion-travelers__tag-list {
+  @include indents();
+  margin: 0 auto 16px;
+  text-align: center;
+  width: 70%;
+  text-decoration: none;
+  color: $color-special-grey;
+  line-height: 18px;
+}
+
+.companion-travelers__transport-list {
+  @include list-reset ();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  list-style: none;
+  color: $color-basic-blue-lighter;
+}
+
+.companion-travelers__transport-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: auto;
+  margin-right: 7px;
+  font-size: 0;
+  opacity: 0.3;
+
+  &.companion-travelers__transport-item--active {
+    opacity: 1;
   }
 }

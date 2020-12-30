@@ -1,24 +1,56 @@
 .page {
   height: 100%;
   box-sizing: border-box;
+}
 
-  .page__body {
-    @include indents();
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
-    min-height: 100%;
-    font-family: $font-normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
-    color: $color-special-grey;
-    background-color: $color-basic-blue-grey;
-  }
+.page__body {
+  @include indents();
+  min-width: 320px;
+  font-family: $font-normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  background-image: linear-gradient(to bottom, $color-blue-dark 0, $color-blue-dark 30px, $color-basic-blue-grey 30px, $color-basic-blue-grey 100%);
+  color: $color-special-grey;
 
-  img {
-    max-width: 100%;
-    /*height: auto;*/
+  &.page__body--with-scrolling {
+    position: relative;
+    padding-top: 73px;
+    z-index: 10;
+
+    .page-header {
+      position: fixed;
+      background-color: $color-white;
+      color: $color-basic-blue;
+      margin: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 11;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 132px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 120px;
+
+      .page-header {
+        padding-top: 0;
+      }
+    }
   }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

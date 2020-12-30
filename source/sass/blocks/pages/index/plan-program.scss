@@ -1,6 +1,21 @@
 .plan-program {
   .plan-program__item {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -10px;
+    padding: 22px 65px 32px 24px;
     background-color: $color-yellow-darker;
+
+    &::after {
+      content: counter(item-counter);
+      counter-increment: item-counter;
+      position: absolute;
+      right: 21px;
+      top: 20px;
+      color: $color-white;
+    }
 
     &:first-child {
       background-color: $color-special-orange;
@@ -11,6 +26,8 @@
     }
 
     &:last-child {
+      border-radius: 10px;
+      padding-bottom: 22px;
       background-color: $color-yellow;
     }
   }

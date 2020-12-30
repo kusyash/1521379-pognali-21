@@ -1,46 +1,115 @@
 .directions {
-  @include main-block-bottom();
+  position: relative;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: -30px;
+  padding-top: 101px;
+  padding-right: 48px;
+  padding-bottom: 34px;
+  padding-left: 48px;
+  background-color: $color-basic-blue-grey;
+  z-index: 5;
 
-  .directions__heading {
-    color: $color-special-orange;
-    font-family: $font-bold;
-    font-size: 24px;
-    line-height: 24px;
+  /*временно*/
+  .directions__content {
+    margin: 0 -23px 0 -23px;
   }
 
-  .directions__heading,
-  .directions__desc,
-  .directions__subtitle,
-  .directions__slogan,
-  .directions__counter-users {
-    @include indents();
+  .directions__description {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 60px;
+  }
+
+  .directions__heading {
+    margin: 0 0 19px 0;
+    line-height: 1;
+    font-family: $font-bold;
+    font-size: 24px;
+    color: $color-special-orange;
+  }
+
+  .directions__desc {
+    margin: 0 15px 0 0;
   }
 
   .directions__list {
     @include list-reset ();
+    margin-bottom: 26px;
+  }
+
+  .directions__item {
+    margin-bottom: 11px;
+  }
+
+  .directions__country {
+    border-radius: 10px 10px 0 0;
+    height: auto;
+    width: 100%;
+    margin: 0 0 -11px 0;
+  }
+
+  .directions__country-info {
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content 36px;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    border-radius: 10px;
+    padding: 24px 24px 7px;
+    background-color: $color-white;
   }
 
   .directions__subtitle {
-    color: $color-black;
+    @include indents();
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
     font-family: $font-bold;
     font-size: 21px;
-    line-height: 21px;
+    line-height: 1;
+    color: $color-black;
+  }
+
+  .directions__flag {
+    position: absolute;
+    left: 25px;
+    top: -13px;
   }
 
   .directions__slogan {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+    margin: 0;
+    padding: 2px 0;
     font-family: $font-medium;
     line-height: 18px;
     opacity: 0.3;
   }
 
   .directions__counter-users {
-    color: $color-basic-blue-darkest;
+    position: relative;
+    display: grid;
+    text-align: left;
+    grid-row: 1;
+    grid-column: 2;
+    margin: 0 0 0 14px;
+    padding: 2px 0 0 18px;
     font-family: $font-medium;
     line-height: 20px;
-    opacity: 0.3;
-  }
+    color: $color-blue-a3;
 
-  .directions__button-base {
-    padding-right: 141px;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 13px;
+      width: 13px;
+      left: 0;
+      top: 6px;
+      background-image: url("../../../../img/users-icon.svg");
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
   }
 }

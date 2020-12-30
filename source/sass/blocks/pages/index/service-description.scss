@@ -1,20 +1,38 @@
 .service-description {
-  @include main-block-bottom();
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  margin-bottom: -30px;
+  padding-top: 31px;
+  padding-right: 48px;
+  padding-bottom: 83px;
+  padding-left: 48px;
   background-color: $color-basic-blue;
+  color: $color-white;
+  background-image: url("../../../../img/about-us-mobile-index.png");
+  background-size: 292px 353px;
+  background-position: 21px top;
+  background-repeat: no-repeat;
+  z-index: 10;
 
-  .service-description__heading {
-    color: $color-special-orange;
-    font-family: $font-bold;
-    font-size: 24px;
-    line-height: 24px;
+  .service-description__content {
+    position: relative;
   }
 
-  .service-description__heading,
-  .service-description__desc {
-    @include indents();
+  .service-description__heading {
+    font-family: $font-bold;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0 0 19px 0;
+    color: $color-special-orange;
   }
 
   .service-description__desc {
     color: $color-white;
+    margin: 0 15px 20px 0;
+  }
+
+  .service-description__tagline {
+    margin: 0;
+    font-family: $font-bold;
   }
 }

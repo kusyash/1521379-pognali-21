@@ -4,12 +4,14 @@
 @import "blocks/modules/visually-hidden";
 @import "blocks/modules/button-base";
 @import "blocks/modules/levels";
+@import "blocks/modules/point";
 @import "blocks/layout/page";
 @import "blocks/layout/page-header";
 @import "blocks/layout/page-main";
 @import "blocks/layout/main-navigation";
 @import "blocks/layout/menu-list";
-@import "blocks/layout/user-list";
+@import "blocks/layout/call-to-action";
+@import "blocks/layout/site-menu";
 @import "blocks/layout/social-list";
 @import "blocks/layout/copyright";
 @import "blocks/layout/page-footer";
@@ -18,7 +20,7 @@
 @import "blocks/pages/index/service-description";
 @import "blocks/pages/index/directions";
 @import "blocks/pages/index/companion-travelers";
-@import "blocks/pages/index/price-plan";
+@import "blocks/pages/index/flag-list";
 @import "blocks/pages/index/price";
 @import "blocks/pages/index/account-registration";
 @import "blocks/pages/index/company-contacts";
