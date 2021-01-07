@@ -5,11 +5,11 @@
 
 .page__body {
   @include indents();
-  min-width: 320px;
+  min-width: $mobile-width;
   font-family: $font-normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
   background-image: linear-gradient(to bottom, $color-blue-dark 0, $color-blue-dark 30px, $color-basic-blue-grey 30px, $color-basic-blue-grey 100%);
   color: $color-special-grey;
 

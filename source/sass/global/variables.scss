@@ -10,7 +10,7 @@ $desktop-contents-width: 1320px;
 
 // fonts
 $font-bold: "Blogger Sans Bold", sans-serif;
-$font-normal: "Blogger Sans", sans-serif;
+$font-normal: "Blogger Sans", "Arial", sans-serif;
 $font-normal-italic: "Blogger Sans Italic", sans-serif;
 $font-light: "Blogger Sans Light", sans-serif;
 $font-light-italic: "Blogger Sans Light Italic", sans-serif;
@@ -18,14 +18,16 @@ $font-medium: "Blogger Sans Medium", sans-serif;
 $font-medium-italic: "Blogger Sans Medium Italic", sans-serif;
 
 // fonts-sizes
-$font-normal: "Blogger Sans", "Arial", sans-serif;
-$mobile-size-font: 16px;
-$mobile-size-font-button: 18px;
-$mobile-size-font-bolder: 21px;
-$mobile-size-heading: 24px;
-$tablet-size-font: 28px;
+$mobile-font-size: 16px;
+$mobile-line-height: 22px;
+$mobile-font-size-button: 18px;
+$mobile-font-size-bolder: 21px;
+$mobile-font-size-heading: 24px;
+$tablet-font-size: 28px;
+$tablet-line-height: 32px;
 $tablet-size-font-smaller: 20px;
-$tablet-size-heading: 45px;
+$tablet-font-size-heading: 45px;
+$desktop-font-size: 28px;
 
 // colors
 $color-white-a3: rgba(255, 255, 255, 0.3);

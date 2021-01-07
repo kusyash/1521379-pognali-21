@@ -1,10 +1,13 @@
 @import "global/fonts";
 @import "global/variables";
+@import "global/root";
 @import "mixins/index";
+@import "utilites/index";
 @import "blocks/modules/visually-hidden";
 @import "blocks/modules/button-base";
 @import "blocks/modules/levels";
 @import "blocks/modules/point";
+@import "blocks/modules/icon-base";
 @import "blocks/layout/page";
 @import "blocks/layout/page-header";
 @import "blocks/layout/page-main";
@@ -38,3 +41,4 @@
 @import "blocks/pages/catalog/form-interests";
 @import "blocks/pages/catalog/sample-result";
 @import "blocks/modules/modal";
+@import "blocks/modules/form-main";

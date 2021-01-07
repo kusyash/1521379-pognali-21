@@ -39,17 +39,17 @@
               <li class="site-menu__item">
                 <div class="site-menu__content">
                   <div class="site-menu__icon-content">
-                    <a class="site-menu__icon-image" width="17" height="15"></a>
+                    <a class="site-menu__icon-image"></a>
                   </div>
-                  <span class="site-menu__link site-menu__link--header" href="tel:+78005558628">8 800 555-86-28</span>
+                  <a class="site-menu__link site-menu__link--header" href="tel:+78005558628">8 800 555-86-28</a>
                 </div>
               </li>
               <li class="site-menu__item">
                 <div class="site-menu__content">
                   <div class="site-menu__icon-content">
-                    <a class="site-menu__icon-image" width="19" height="13"></a>
+                    <a class="site-menu__icon-image"></a>
                   </div>
-                  <span class="site-menu__link site-menu__link--header" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</span>
+                  <a class="site-menu__link site-menu__link--header" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </div>
               </li>
             </ul>
@@ -80,49 +80,51 @@
       <h1 class="visually-hidden">Сервис для путешествий компании «Погнали»</h1>
       <section class="promo-description">
         <h2 class="visually-hidden">Слоган компании «Погнали»</h2>
-        <div class="promo-description__topic">
-          <h2 class="promo-description__heading">В путешествие с крутыми попутчиками!</h2>
-          <div class="promo-description__user-links">
-            <ul class="site-menu site-menu--promo">
-              <li class="site-menu__item site-menu__item--action">
-                <a class="button-base" href="#">Авторизация</a>
-              </li>
-              <li class="site-menu__item">
-                <div class="site-menu__content">
-                  <div class="site-menu__icon-content site-menu__icon-content--promo">
-                    <a class="site-menu__icon-image" width="17" height="15"></a>
+        <div class="promo-description__content">
+          <div class="promo-description__topic">
+            <h2 class="promo-description__heading">В путешествие с крутыми попутчиками!</h2>
+            <div class="promo-description__user-links">
+              <ul class="site-menu site-menu--promo">
+                <li class="site-menu__item site-menu__item--action">
+                  <a class="button-base" href="#">Авторизация</a>
+                </li>
+                <li class="site-menu__item">
+                  <div class="site-menu__content">
+                    <div class="site-menu__icon-content site-menu__icon-content--promo">
+                      <a class="site-menu__icon-image"></a>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="site-menu__item">
-                <div class="site-menu__content">
-                  <div class="site-menu__icon-content site-menu__icon-content--promo">
-                    <a class="site-menu__icon-image" width="19" height="13"></a>
+                </li>
+                <li class="site-menu__item">
+                  <div class="site-menu__content">
+                    <div class="site-menu__icon-content site-menu__icon-content--promo">
+                      <a class="site-menu__icon-image"></a>
+                    </div>
                   </div>
-                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <blockquote class="promo-description__review">
+            <p class="promo-description__quote">«Лучшее приложение, что я видел в жизни!»</p>
+            <cite class="promo-description__quote-author">Мурат Эльтазин <br/> главный редактор газеты «гаджетлайф»</cite>
+          </blockquote>
+          <div class="promo-description__plan-description">
+            <ul class="promo-description__plan-program plan-program">
+              <li class="plan-program__item">
+                Выберите направление
+              </li>
+              <li class="plan-program__item">
+                Изучите идеи путешественников
+              </li>
+              <li class="plan-program__item">
+                Находите тех, кто похож на вас
+              </li>
+              <li class="plan-program__item">
+                Путешествуйте вместе!
               </li>
             </ul>
           </div>
-        </div>
-        <blockquote class="promo-description__review">
-          <p class="promo-description__quote">«Лучшее приложение, что я видел в жизни!»</p>
-          <cite class="promo-description__quote-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-        </blockquote>
-        <div class="promo-description__plan-program">
-          <ul class="promo-description__plan-program-list plan-program">
-            <li class="plan-program__item">
-              Выберите направление
-            </li>
-            <li class="plan-program__item">
-              Изучите идеи путешественников
-            </li>
-            <li class="plan-program__item">
-              Находите тех, кто похож на вас
-            </li>
-            <li class="plan-program__item">
-              Путешествуйте вместе!
-            </li>
-          </ul>
         </div>
       </section>
       <section class="service-description">
@@ -130,9 +132,10 @@
           <h2 class="service-description__heading">О сервисе</h2>
           <p class="service-description__desc">
             Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой!
-            Делитесь своими идеями путешествий и черпайте вдохновение в&nbsp;чужих.
+            Делитесь своими идеями путешествий <br/>и черпайте вдохновение в&nbsp;чужих.
           </p>
           <p class="service-description__tagline">А если найдете кого-то близкого по духу &mdash; скорее зовите в совместный трип!</p>
+          <button class="service-description__button-base button-base button-base--next">Подробнее</button>
         </div>
       </section>
       <section class="directions">
@@ -146,12 +149,18 @@
           <ul class="directions__list">
             <li class="directions__item">
               <picture>
-                <img class="directions__country" src="img/thailand-mobile-index.png" width="270" height="110" alt="Два острова в море голубого цвета, полностью поросшие зеленью">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-tablet-and-desktop-index.webp 1x, img/thailand-tablet-and-desktop-index@2x.webp 2x">
+                <source type="image/webp" srcset="img/thailand-mobile-index.webp 270w, img/thailand-mobile-index@2x.webp 540w" sizes="84vw">
+                <source media="(min-width: 768px)" srcset="img/thailand-tablet-and-desktop-index.jpg 1x, img/thailand-tablet-and-desktop-index@2x.jpg 2x">
+                <img class="directions__country" src="img/thailand-mobile-index.jpg" srcset="img/thailand-mobile-index.jpg 270w, img/thailand-mobile-index@2x.jpg 540w" sizes="84vw" width="270" height="110" alt="Два острова в море лазурного цвета, полностью поросшие зеленью">
               </picture>
               <div class="directions__country-info">
                 <h3 class="directions__subtitle">Таиланд</h3>
                 <picture>
-                  <img class="directions__flag" src="img/Thailand-flag-mobile-index.png" width="35" height="24" alt="Флаг страны">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/Thailand-flag-tablet-and-desktop-index.webp 1x, img/Thailand-flag-tablet-and-desktop-index@2x.webp 2x">
+                  <source type="image/webp" srcset="img/Thailand-flag-mobile-index.webp 1x, img/Thailand-flag-mobile-index@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/Thailand-flag-tablet-and-desktop-index.png 1x, img/Thailand-flag-tablet-and-desktop-index@2x.png 2x">
+                  <img class="directions__flag" src="img/Thailand-flag-mobile-index.png" srcset="img/hailand-flag-mobile-index@2x.png 2x" width="35" height="24" alt="Флаг страны">
                 </picture>
                 <p class="directions__slogan">
                   Джунгли зовут!
@@ -161,12 +170,18 @@
             </li>
             <li class="directions__item">
               <picture>
-                <img class="directions__country" src="img/france-mobile-index.png" width="270" height="110" alt="Старинные дома на городской улице, окруженные деревьями">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/france-tablet-and-desktop-index.webp 1x, img/france-tablet-and-desktop-index@2x.webp 2x">
+                <source type="image/webp" srcset="img/france-mobile-index.webp 270w, img/france-mobile-index@2x.webp 540w" sizes="84vw">
+                <source media="(min-width: 768px)" srcset="img/france-tablet-and-desktop-index.jpg 1x, img/france-tablet-and-desktop-index@2x.jpg 2x">
+                <img class="directions__country" src="img/france-mobile-index.jpg" srcset="img/france-mobile-index.jpg 270w, img/france-mobile-index@2x.jpg 540w" sizes="84vw" width="270" height="110" alt="Старинные дома на городской улице, окруженные деревьями">
               </picture>
               <div class="directions__country-info">
                 <h3 class="directions__subtitle">Франция</h3>
                 <picture>
-                  <img class="directions__flag" src="img/France-flag-mobile-index.png" width="35" height="24" alt="Флаг страны">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/France-flag-tablet-and-desktop-index.webp 1x, img/France-flag-tablet-and-desktop-index@2x.webp 2x">
+                  <source type="image/webp" srcset="img/France-flag-mobile-index.webp 1x, img/France-flag-mobile-index@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/France-flag-tablet-and-desktop-index.png 1x, img/France-flag-tablet-and-desktop-index@2x.png 2x">
+                  <img class="directions__flag" src="img/France-flag-mobile-index.png.png" srcset="img/France-flag-mobile-index.png 1x, img/France-flag-mobile-index@2x.png 2x" width="35" height="24" alt="Флаг страны">
                 </picture>
                 <p class="directions__slogan">
                   Трэ бьен, манифик!
@@ -176,12 +191,18 @@
             </li>
             <li class="directions__item">
               <picture>
-                <img class="directions__country" src="img/czech-mobile-index.png" width="270" height="110" alt="Туристский пароход, проходящий вдоль набережной в центре города со старинными зданиями">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-tablet-and-desktop-index.webp 1x, img/czech-tablet-and-desktop-index@2x.webp 2x">
+                <source type="image/webp" srcset="img/czech-mobile-index.webp 270w, img/czech-mobile-index@2x.webp 540w" sizes="84vw">
+                <source media="(min-width: 768px)" srcset="img/czech-tablet-and-desktop-index.jpg 1x, img/czech-tablet-and-desktop-index@2x.jpg 2x">
+                <img class="directions__country" src="img/czech-mobile-index.jpg" srcset="img/czech-mobile-index.jpg 270w, img/czech-tablet-and-desktop-index@2x.jpg 540w" sizes="84vw" width="270" height="110" alt="Туристский пароход, проходящий вдоль набережной в центре города со старинными зданиями">
               </picture>
               <div class="directions__country-info">
                 <h3 class="directions__subtitle">Чехия</h3>
                 <picture>
-                  <img class="directions__flag" src="img/Czech-flag-mobile-index.png" width="35" height="24" alt="Флаг страны">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/Thailand-flag-tablet-and-desktop-index.webp 1x, img/Thailand-flag-tablet-and-desktop-index@2x.webp 2x">
+                  <source type="image/webp" srcset="img/Thailand-flag-mobile-index.webp 1x, img/Thailand-flag-mobile-index@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/Thailand-flag-tablet-and-desktop-index.png 1x, img/Thailand-flag-tablet-and-desktop-index@2x.png 2x">
+                  <img class="directions__flag" src="img/Thailand-flag-mobile-index.png" srcset="img/Thailand-flag-mobile-index.png 1x, img/Thailand-flag-mobile-index@2x.png 2x" width="35" height="24" alt="Флаг страны">
                 </picture>
                 <p class="directions__slogan">
                   Закоулки старой Европы
@@ -190,7 +211,7 @@
               </div>
             </li>
           </ul>
-          <button class="button-base button-base--next">
+          <button class="directions__show-all button-base button-base--next">
             Показать все
           </button>
         </div>
@@ -248,7 +269,7 @@
                   </li>
                   <li class="companion-travelers__transport-item">
                     <picture>
-                      <img src="img/icon-bus-index.svg" width="18" height="21"" alt="Автотранспорт">
+                      <img src="img/icon-bus-index.svg" width="18" height="21" alt="Автотранспорт">
                     </picture>
                   </li>
                   <li class="companion-travelers__transport-item">
@@ -301,7 +322,7 @@
                   </li>
                   <li class="companion-travelers__transport-item companion-travelers__transport-item--active">
                     <picture>
-                      <img src="img/icon-bus-index.svg" width="18" height="21"" alt="Автотранспорт">
+                      <img src="img/icon-bus-index.svg" width="18" height="21" alt="Автотранспорт">
                     </picture>
                   </li>
                   <li class="companion-travelers__transport-item">
@@ -345,38 +366,34 @@
       <section class="account-registration">
         <h2 class="account-registration__heading">Заинтересовались?</h2>
         <p class="account-registration__desc account-registration__desc--sign-in">
-          Зарегистрируйтесь, это&nbsp;быстро&nbsp;и бесплатно! <br/> Уже зарегистрированы? Тогда скорее
+          Зарегистрируйтесь, это&nbsp;быстро&nbsp;и бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее
           <a class="account-registration__link" href="#">авторизуйтесь.</a>
         </p>
-        <form class="account-registration__form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="account-registration__form-case">
-            <label class="account-registration__label">
-              <input class="account-registration__input" type="email" maxlength="100" name="email" placeholder="E-mail">
+        <form class="form-main account-registration__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-main__row">
+            <label class="account-registration__label form-main__row-field">
+              <input class="account-registration__input form-main__input form-main__row-input" type="email" maxlength="100" name="email" placeholder="E-mail">
             </label>
-            <button class="button-base button-base--next button-base--submit" type="submit">
-              <span class="visually-hidden">Отправить</span>
+            <button class="button-base button-base--next form-main__row-submit" type="submit">
+              <span class="account-registration__submit-text button-base__text">Регистрация</span>
             </button>
-          </p>
+          </div>
         </form>
         <p class="account-registration__desc account-registration__desc--feedback">
-          Остались вопросы? <br/> Мы с радостью на них ответим!
+          Остались вопросы? <br class="media-hide-tablet"/> Мы с радостью на них ответим!
         </p>
-        <ul class="account-registration__site-menu site-menu site-menu--contacts">
-          <li class="site-menu__item">
-            <div class="site-menu__content">
-              <div class="site-menu__icon-content">
-                <a class="site-menu__icon-image" width="17" height="15"></a>
-              </div>
-              <span class="site-menu__link" href="tel:+78005558628">8 800 555-86-28</span>
-            </div>
+        <ul class="account-registration-menu">
+          <li class="account-registration-menu__item">
+            <a class="account-registration-menu__link" href="tel:+78005558628">
+              <span class="account-registration-menu__icon icon-base"></span>
+              8 800 555-86-28
+            </a>
           </li>
           <li class="site-menu__item">
-            <div class="site-menu__content">
-              <div class="site-menu__icon-content">
-                <a class="site-menu__icon-image" width="19" height="13"></a>
-              </div>
-              <span class="site-menu__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</span>
-            </div>
+            <a class="account-registration-menu__link" href="mailto:mail@htmlacademy.ru">
+              <span class="account-registration-menu__icon icon-base"></span>
+              mail@htmlacademy.ru
+            </a>
           </li>
         </ul>
       </section>
@@ -384,8 +401,11 @@
         <h2 class="visually-hidden">Адрес нашей компании</h2>
         <div class="company-contacts__description">
           <div class="company-contacts__content">
-            <address class="company-contacts__adress">ул. Большая Конюшенная, 19/8</address>
-            <a class="button-base button-base--next button-base--border" href="https://goo.gl/maps/XXsRP3yxiqQ3t3y38">Проложить маршрут</a>
+            <address class="company-contacts__adress">
+              <span class="company-contacts__icon icon-base"></span>
+              ул. Большая <br class="media-hide-tablet"/> Конюшенная, 19/8
+            </address>
+            <a class="company-contacts__direction button-base button-base--next button-base--border" href="https://goo.gl/maps/XXsRP3yxiqQ3t3y38">Проложить маршрут</a>
           </div>
         </div>
         <iframe class="company-contacts__map" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3997.3750340548363!2d30.3184984!3d59.9373272!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!3m2!1d59.9387165!2d30.3230474!5e0!3m2!1sru!2sru!4v1606233373808!5m2!1sru!2sru" width="320" height="322" allowfullscreen="" aria-hidden="false" style="border:0" tabindex="0" title="Карта компании по адресу улица Большая Конюшенная, 19/8"></iframe>
@@ -398,13 +418,13 @@
         </a>
         <div class="page-footer__social">
           <ul class="social-list social-list--footer">
-            <li class="social-list__item social-list__item">
+            <li class="social-list__item">
               <a class="button-base button-base--icon" href="#" aria-label="Мы в Фейсбуке">F</a>
             </li>
-            <li class="social-list__item social-list__item">
+            <li class="social-list__item">
               <a class="button-base button-base--icon" href="#" aria-label="Мы в ВКонтакте">V</a>
             </li>
-            <li class="social-list__item social-list__item">
+            <li class="social-list__item">
               <a class="button-base button-base--icon" href="#" aria-label="Мы в Инстаграм">I</a>
             </li>
           </ul>

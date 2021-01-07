@@ -31,26 +31,80 @@
 
 .company-contacts__adress {
   @include indents();
-  position: relative;
   font-family: $font-bold;
   text-transform: uppercase;
   font-style: normal;
   margin-bottom: 33px;
-  padding-right: 40px;
-  padding-left: 61px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    border-radius: 50px;
-    height: 45px;
-    width: 45px;
-    left: 0;
-    top: -1px;
-    background-image: url("../../../../img/vector-marker.svg");
-    background-repeat: no-repeat;
-    background-size: 16px 21px;
-    background-position: 15px 12px;
-    background-color: $color-special-blue-darker;
+.company-contacts__icon {
+  margin-right: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .company-contacts__description {
+    padding-bottom: 84px;
+    padding-top: 108px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .company-contacts__content {
+    .company-contacts__adress {
+      margin-bottom: 44px;
+
+      &::before {
+        height: 68px;
+        width: 68px;
+        top: 0;
+        background-size: 32px 32px;
+      }
+    }
+
+    .company-contacts__direction {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .company-contacts__map {
+    height: 583px;
+    background-image: url("../../../../img/icon-marker-map-tablet-and-desktop.svg"), url("../../../../img/background-map-tablet-index.png");
+    background-position: 50% 45%, 50% 50%;
+    background-size: 56px 56px, cover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .company-contacts__description {
+    padding-top: 115px;
+    padding-bottom: 61px;
+  }
+
+  .company-contacts__content {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    margin-left: 141px;
+    grid-column-gap: 148px;
+
+    .company-contacts__adress {
+      margin-bottom: 0;
+
+      &::before {
+        height: 90px;
+        width: 90px;
+        background-size: 42px 42px;
+      }
+    }
+
+    .company-contacts__direction {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 324px;
+    }
   }
 }

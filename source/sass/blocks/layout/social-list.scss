@@ -31,9 +31,6 @@
     margin-left: 10px;
   }
 
-  .button-base {
-    --button-base-square: 50px;
-  }
 
   .social-list__link {
     display: flex;
@@ -43,6 +40,21 @@
     height: 24px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .social-list {
+    .button-base {
+      --button-base-square: 50px;
+    }
+
+    &.social-list--footer {
+      .button-base {
+        --button-base-square: 45px;
+      }
+    }
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .social-list {
