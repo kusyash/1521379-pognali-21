@@ -1,20 +1,3 @@
 .page-header {
-  background-color: $color-blue-dark;
-  color: $color-white;
-
-  @media (min-width: $desktop-width) {
-    padding-top: 28px;
-  }
-
-  &.page-header--main {
-    background-color: $color-basic-blue-darkest;
-
-    @media (min-width: $tablet-width) {
-      background-color: $color-blue-dark;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-color: $color-basic-blue-darkest;
-    }
-  }
+  flex-shrink: 0;
 }

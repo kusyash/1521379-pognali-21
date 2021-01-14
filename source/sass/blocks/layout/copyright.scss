@@ -1,11 +1,15 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
+  min-height: 34px;
+  width: 100%;
+  padding: 0;
+  font-weight: 400;
+  line-height: 16px;
+  transition: opacity $transition-duration-1s;
   text-decoration: none;
   color: inherit;
-  border-top: 1px solid $color-basic-blue-grey-light;
-  padding-top: 13px;
 
   &:hover {
     opacity: 0.6;
@@ -21,6 +25,13 @@
   .copyright__desc {
     padding-top: 5px;
   }
+
+  .copyright__logo {
+    display: block;
+    margin-left: 5px;
+    height: 34px;
+    width: 27px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -29,10 +40,14 @@
     width: 154px;
     padding-top: 3px;
     line-height: 1;
-    font-size: $tablet-size-font-smaller;
+    font-size: 20px;
   }
 
   .copyright__desc {
     padding-top: 1px;
+  }
+
+  .copyright__logo {
+    margin-top: 10px;
   }
 }

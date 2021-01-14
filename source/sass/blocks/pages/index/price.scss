@@ -42,6 +42,10 @@
     background-position: 0 0;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/rates-mobile-and-tablet-index@2x.png");
+    }
   }
 }
 
@@ -61,7 +65,7 @@
   &.price__subtitle--buisness {
     line-height: 1;
     font-family: $font-bold;
-    font-size: 24px;
+    font-size: $mobile-font-size-heading;
     color: $color-special-orange;
   }
 }
@@ -100,7 +104,7 @@
       justify-content: center;
       height: 34px;
       width: 34px;
-      right: -22%;
+      right: -44px;
       top: 3px;
       background-color: $color-yellow-darker;
       color: $color-white;
@@ -127,6 +131,10 @@
   &.price__item--buisness {
     padding: 11px 0 10px;
     border-top: 1px solid $color-dark-a05;
+
+    &.price__item--buisness:last-child {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
   }
 }
 
@@ -141,9 +149,23 @@
 @media (min-width: $tablet-width) {
   .price {
     &.price--personal {
+      @include container();
+      margin-bottom: -60px;
+      padding-top: 100px;
       padding-bottom: 45px;
-      padding-top: 130px;
-      background-color: #edeff6;
+      background-color: $color-basic-blue-grey;
+    }
+
+    &.price--buisness {
+      max-width: 750px;
+      width: 688px;
+      padding-top: 50px;
+      box-shadow: 0 4px 22px $color-dark-blue-a18;
+    }
+
+    &.price--personal,
+    &.price--buisness {
+      border-radius: 0 0 60px 60px;
     }
   }
 
@@ -153,40 +175,49 @@
     padding-bottom: 19px;
     max-width: 1178px;
 
-
     &::after {
-      top: auto;
-      bottom: 0;
-      right: 6.5%;
+      top: 340px;
+      right: 45px;
     }
   }
 
   .price__subtitle {
     &.price__subtitle--personal {
-      padding: 0;
-      margin-bottom: 36px;
       text-align: center;
+      margin-bottom: 36px;
+      padding: 0;
+    }
+
+    &.price__subtitle--personal,
+    &.price__subtitle--buisness {
+      font-size: var(--font-size-header);
     }
   }
 
   .price__list {
     &.price__list--personal {
-      z-index: 0;
-      padding: 40px 5.09% 33px 13.08%;
       margin-bottom: 0;
+      padding: 40px 35px 33px 90px;
+      z-index: 0;
+
 
       &::before {
         content: "";
         position: absolute;
+        border-radius: 20px;
+        width: 200px;
         top: 0;
         right: 0;
         bottom: -14px;
-
-        width: 29%;
-
-        background-color: #e2e5f2;
-        border-radius: 20px;
+        background-color: $color-basic-blue-grey-lighter;
       }
+    }
+
+    &.price__list--buisness {
+      width: 505px;
+      margin-bottom: 52px;
+      font-size: 22px;
+      line-height: 28px;
     }
   }
 
@@ -194,7 +225,6 @@
     &.price__item--personal {
       display: flex;
       justify-content: space-between;
-
       padding-top: 18px;
       padding-bottom: 19px;
 
@@ -203,12 +233,11 @@
       }
 
       &::after {
-        top: 0;
-        left: -16%;
-        right: auto;
-
-        width: 68px;
         height: 68px;
+        width: 68px;
+        top: 0;
+        right: auto;
+        left: -90px;
       }
 
       &:first-child::after {
@@ -219,30 +248,42 @@
         top: 2px;
       }
     }
+
+    &.price__item--buisness {
+      display: grid;
+      grid-auto-flow: column;
+
+      &.price__item--buisness dt {
+        justify-self: start;
+        align-self: baseline;
+      }
+
+      &.price__item--buisness dd {
+        justify-self: end;
+        align-self: baseline;
+      }
+    }
   }
 
   .price__link {
     position: relative;
     display: block;
-    width: 70%;
     margin-right: auto;
-    padding: 26px 22% 22px 13%;
+    padding: 26px 0 22px 90px;
     font-size: 20px;
 
     &::before {
       content: "";
       position: absolute;
+      height: 68px;
+      width: 68px;
       top: 0;
       left: 0;
-
-      width: 68px;
-      height: 68px;
-
-      background-color: #e2e5f2;
-      border-radius: 50%;
+      background-color: $color-basic-blue-grey-lighter;
+      border-radius: 50px;
       background-image: url("../../../../img/icon-businessman.svg");
       background-repeat: no-repeat;
-      background-position: 50% 50%;
+      background-position: 20px 20px;
       background-size: 27px 27px;
     }
   }
@@ -251,15 +292,20 @@
 @media (min-width: $desktop-width) {
   .price {
     &.price--personal {
-      padding-bottom: 166px;
-      padding-top: 163px;
+      padding-bottom: 165px;
+      padding-top: 134px;
+    }
+
+    &.price--buisness {
+      width: 750px;
+      margin-top: 159px;
+      border-radius: 30px;
     }
   }
 
   .price__content {
-    margin: 0 auto;
-    padding-bottom: 0;
     width: 1178px;
+    padding-bottom: 0;
 
     &::after {
       height: 198px;
@@ -270,7 +316,7 @@
       background-image: url("../../../../img/rates-desktop-index.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../../../img/rates-desktop-index.png");
+        background-image: url("../../../../img/rates-desktop-index@2x.png");
       }
     }
   }
@@ -278,6 +324,10 @@
   .price__subtitle {
     &.price__subtitle--personal {
       margin-bottom: 87px;
+    }
+
+    &.price__subtitle--buisness {
+      margin-bottom: 49px;
     }
   }
 
@@ -291,6 +341,11 @@
         width: 446px;
       }
     }
+
+    &.price__list--buisness {
+      width: 630px;
+      margin: 0 auto 53px;
+    }
   }
 
   .price__item {
@@ -300,10 +355,14 @@
         top: 0;
       }
     }
+
+    &.price__item--buisness {
+      padding: 11px 0 15px;
+    }
   }
 
   .price__link {
+    width: 590px;
     padding: 25px 0 23px 89px;
-    width: 50%;
   }
 }

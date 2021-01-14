@@ -1,0 +1,55 @@
+.popup-message {
+  --popup-triangle-size: 8px;
+  position: relative;
+
+  &::after {
+    content: attr(data-popup-message);
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    pointer-events: none;
+    word-break: normal;
+    top: calc(100% + var(--popup-triangle-size));
+    left: 50%;
+    padding-top: 18px;
+    padding-right: 25px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    font-size: 20px;
+    line-height: $mobile-line-height-smaller;
+    text-align: center;
+    font-weight: 400;
+    background-color: #101d41;
+    color: $color-white;
+    z-index: 10000;
+  }
+
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    transform: translateX(-50%);
+    height: 0;
+    width: 0;
+    left: 50%;
+    top: 100%;
+    border-width: var(--popup-triangle-size);
+    border-style: solid;
+    border-color: #101d41 transparent;
+    border-top-style: none;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    z-index: 10000;
+  }
+
+  &:hover {
+    &::before {
+      display: block;
+    }
+
+    &::after {
+      display: block;
+    }
+  }
+}

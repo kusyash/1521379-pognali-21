@@ -1,0 +1,112 @@
+.logotype {
+  display: flex;
+  transition: opacity $transition-duration-1s;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: none;
+    height: 15px;
+    width: 96px;
+    background-image: url("../../../../img/logo-mobile-menu-opened.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 96px 15px;
+
+    @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+      &::before {
+        background-image: url("../../../../img/logo-mobile-menu-opened@2x.png");
+      }
+    }
+  }
+
+  &.logotype--show::before {
+    display: block;
+  }
+}
+
+.logotype__image {
+  display: block;
+  height: 15px;
+  width: 96px;
+
+  &.logotype__image--hide {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logotype {
+    &::before {
+      height: 42px;
+      width: 162px;
+      background-image: url("../../../../img/logo-tablet-menu-opened.png");
+      background-size: 162px 42px;
+    }
+
+    @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+      &::before {
+        background-image: url("../../../../img/logo-tablet-menu-opened@2x.png");
+      }
+    }
+  }
+
+  .logotype__image {
+    height: 42px;
+    width: 162px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logotype {
+    &::before {
+      height: 52px;
+      width: 196px;
+      background-image: url("../../../../img/logo-desktop-menu-opened.png");
+      background-size: 196px 52px;
+    }
+
+    &.logotype--show::before {
+      display: block;
+    }
+
+    @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+      &::before {
+        background-image: url("../../../../img/logo-desktop-menu-opened@2x.png");
+      }
+    }
+  }
+
+  .logotype__image {
+    height: 52px;
+    width: 196px;
+
+    &.logotype__image--hide {
+      display: none;
+    }
+  }
+}
+
+@media (max-height: $mobile-max-height-page) and (max-width: $mobile-width-page-last), (max-height: $tablet-max-height-page) and (min-width: $tablet-width) {
+  .logotype {
+    &::before {
+      display: block;
+
+      @media (min-width: $desktop-width) {
+        .logotype {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .logotype__image {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      .logotype__image {
+        display: block;
+      }
+    }
+  }
+}

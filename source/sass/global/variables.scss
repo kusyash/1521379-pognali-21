@@ -5,6 +5,10 @@ $tablet-width: 768px;
 $tablet-width-only: 1438px;
 $desktop-width: 1440px;
 
+$mobile-width-page-last: $tablet-width - 1px;
+$mobile-max-height-page: 280px;
+$tablet-max-height-page: 480px;
+
 // others
 $desktop-contents-width: 1320px;
 
@@ -19,13 +23,13 @@ $font-medium-italic: "Blogger Sans Medium Italic", sans-serif;
 
 // fonts-sizes
 $mobile-font-size: 16px;
-$mobile-line-height: 22px;
+$mobile-line-height-smaller: 20px;
+$mobile-line-height: 24px;
 $mobile-font-size-button: 18px;
 $mobile-font-size-bolder: 21px;
 $mobile-font-size-heading: 24px;
 $tablet-font-size: 28px;
 $tablet-line-height: 32px;
-$tablet-size-font-smaller: 20px;
 $tablet-font-size-heading: 45px;
 $desktop-font-size: 28px;
 
@@ -33,13 +37,16 @@ $desktop-font-size: 28px;
 $color-white-a3: rgba(255, 255, 255, 0.3);
 $color-dark-a05: rgba(0, 0, 0, 0.05);
 $color-dark-a14: rgba(0, 0, 0, 0.14);
+$color-dark-a16: rgba(0, 0, 0, 0.16);
 $color-dark-blue-a14:rgba(29, 46, 91, 0.14);
+$color-dark-blue-a18:rgba(29, 46, 91, 0.18);
 $color-blue-a3: rgba(22, 28, 53, 0.3);
 $color-blue-dark-a3: rgba(24, 32, 68, 0.3);
 $color-special-grey-a3: rgba(68, 68, 68, 0.3);
 $color-special-grey-a6: rgba(68, 68, 68, 0.6);
 $color-special-grey-dark-a6: rgba(0, 0, 0, 0.6);
 $color-basic-blue-a3: rgba(25, 33, 68, 0.3);
+$color-basic-blue-a6: rgba(25, 33, 68, 0.6);
 $color-yellow-a3: rgba(255, 215, 75, 0.3);
 $color-special-orange-dark-a3: rgba(255, 141, 48, 0.3);
 $color-white:#ffffff;
@@ -67,12 +74,20 @@ $color-yellow-light: #f3c72b;
 $color-special-blue-dark: #141b3b;
 $color-special-blue-darker: #121936;
 $color-special-grey: #444444;
+$color-special-blue-grey-light: #f2f2f2;
 $color-special-orange: #ff8d30;
 $color-special-orange-lighter: #ffa530;
 $color-special-orange-dark: #ff8d30;
+$color-special-orange-darker:#f26926;
 $color-special-red: #ff0000;
 $color-special-red-light: #ff5c23;
 $background-color-point-inactively: #f97676;
 $background-color-point-actively: #81e31e;
 $shadow-dark-light: 0 3px 6px 0 $color-dark-a14;
 $box-shadow-blue-dark-light: 0 2px 8px $color-dark-blue-a14;
+$box-shadow-color-dark: 0 4px 9px 0 $color-dark-a16;
+
+
+//transitions
+$transition-duration-1s: 0.15s;
+$transition-duration-250ms: 250ms;

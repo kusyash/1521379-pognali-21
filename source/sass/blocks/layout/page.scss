@@ -12,35 +12,6 @@
   line-height: var(--line-height);
   background-image: linear-gradient(to bottom, $color-blue-dark 0, $color-blue-dark 30px, $color-basic-blue-grey 30px, $color-basic-blue-grey 100%);
   color: $color-special-grey;
-
-  &.page__body--with-scrolling {
-    position: relative;
-    padding-top: 73px;
-    z-index: 10;
-
-    .page-header {
-      position: fixed;
-      background-color: $color-white;
-      color: $color-basic-blue;
-      margin: 0;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 11;
-    }
-
-    @media (min-width: $tablet-width) {
-      padding-top: 132px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 120px;
-
-      .page-header {
-        padding-top: 0;
-      }
-    }
-  }
 }
 
 *,

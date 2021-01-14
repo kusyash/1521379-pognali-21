@@ -29,7 +29,6 @@
     text-align: center;
     width: var(--account-registration-description-width);
     font-family: $font-light;
-    font-weight: 300;
     margin: 0 auto;
     max-width: $tablet-width;
 
@@ -65,32 +64,23 @@
   .account-registration__submit-text {
     display: none;
   }
-}
 
-.account-registration-menu {
-  @include list-reset();
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  font-family: $font-medium;
-
-  .account-registration-menu__item {
-    align-items: center;
-  }
-
-  .account-registration-menu__link {
-    display: flex;
-    align-items: center;
-    font-family: $font-bold;
-    color: $color-yellow;
-    text-decoration: none;
-    text-transform: uppercase;
+  .account-registration__site-menu {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 18px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .account-registration {
     --account-registration-description-width: auto;
+    border-radius: 0 0 60px 60px;
+    margin-bottom: -60px;
+    padding-top: 131px;
+    padding-bottom: 60px;
 
     .account-registration__form {
       margin-bottom: 61px;
@@ -109,17 +99,18 @@
     .account-registration__heading {
       margin-bottom: 62px;
     }
-  }
 
-  .account-registration-menu {
-    padding-left: 35px;
+    .account-registration__site-menu {
+      width: 100%;
+      justify-content: start;
+      margin-top: 41px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .account-registration {
-    padding-right: 133px;
-    padding-left: 133px;
+    padding: 165px 133px 104px 133px;
 
     .button-base {
       min-width: 330px;
@@ -128,16 +119,12 @@
     .account-registration__submit-text {
       display: inline;
     }
-  }
 
-  .account-registration-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-
-    .account-registration-menu__item {
-      margin-right: 110px;
+    .account-registration__site-menu {
+      display: flex;
+      margin-top: 44px;
+      justify-content: center;
+      align-items: baseline;
     }
   }
 }

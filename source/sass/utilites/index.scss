@@ -1,3 +1,20 @@
+.media-hide-mobile {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .media-hide-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .media-hide-mobile {
+    display: block;
+  }
+}
+
+
 .media-hide-tablet {
   visibility: visible;
 }

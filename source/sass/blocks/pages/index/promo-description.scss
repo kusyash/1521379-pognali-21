@@ -1,7 +1,6 @@
 .promo-description {
-  background-color: $color-basic-blue;
-  color: $color-white;
-  padding-bottom: 9px;
+  padding-top: 35px;
+  background-color: #161c35;
 }
 
 .promo-description__topic {
@@ -18,9 +17,13 @@
   top: 0;
   background-color: $color-basic-blue-darkest;
   background-image: url("../../../../img/traveller-illustration-mobile-index.png"), url("../../../../img/globe-back-mobile-index.png");
-  background-position: 62.5% 100%, center center;
+  background-position: 79px 142px, center center;
   background-size: 192px 255px, cover;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../../img/traveller-illustration-mobile-index@2x.png"), url("../../../../img/globe-back-mobile-index@2x.png");
+  }
 }
 
 .promo-description__heading {
@@ -41,11 +44,11 @@
 
 .promo-description__plan-description {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 11px;
   margin-top: -80px;
   padding-left: 25px;
   padding-right: 25px;
-  font-size: 18px;
+  font-size: $mobile-font-size-button;
   line-height: 18px;
   color: $color-basic-blue-darkest;
 }
@@ -54,7 +57,7 @@
   counter-reset: item-counter;
   line-height: 1;
   font-family: $font-bold;
-  font-size: 18px;
+  font-size: $mobile-font-size-button;
   color: $color-basic-blue-darkest;
 }
 
@@ -66,6 +69,7 @@
 
 .promo-description__quote-author {
   font-style: normal;
+  width: 155px;
 }
 
 .promo-description__heading,
@@ -113,12 +117,16 @@
 
   .promo-description__review {
     min-height: 612px;
-    padding: 76px 9.38% 350px;
+    padding: 76px 72px 350px;
     background-image: url("../../../../img/traveller-illustration-tablet-index.png"), url("../../../../img/globe-back-tablet-index.png");
     background-color: transparent;
-    background-position: 72% 23px, center 100%;
-    background-size: 372px 451px, 1479px 612px;
+    background-position: 285px 23px, center 0;
+    background-size: 372px 451px, 765px 612px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/traveller-illustration-tablet-index@2x.png"), url("../../../../img/globe-back-tablet-index@2x.png");
+    }
   }
 
   .promo-description__plan-description {
@@ -135,14 +143,14 @@
     margin-top: 0;
     margin-bottom: 45px;
     width: 264px;
-    font-size: 28px;
-    line-height: 33px;
+    font-size: $desktop-font-size;
+    line-height: $tablet-line-height;
   }
 
   .promo-description__quote-author {
     width: 264px;
-    font-size: 21px;
-    line-height: 25px;
+    font-size: $mobile-font-size-bolder;
+    line-height: $mobile-line-height;
   }
 }
 
@@ -150,14 +158,20 @@
   .promo-description {
     position: relative;
     border-radius: 0 0 60px 60px;
-    margin-bottom: -60px;
+    margin-bottom: -61px;
+    margin-top: -1px;
+    padding-top: 11px;
     padding-bottom: 0;
     background-image: url("../../../../img/globe-back-desktop-index.png");
-    background-position: 0 -110px;
+    background-position: bottom;
     background-size: 1440px 750px;
     background-repeat: no-repeat;
     background-color: $color-basic-blue-darkest;
     z-index: 7;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/globe-back-desktop-index@2x.png");
+    }
   }
 
   .promo-description__topic {
@@ -180,9 +194,13 @@
     row-gap: 105px;
     padding: 0;
     background-image: url("../../../../img/traveller-illustration-desktop-index.png");
-    background-position: 544px 100%;
+    background-position: 544px 0;
     background-size: 431px 640px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/traveller-illustration-desktop-index@2x.png");
+    }
   }
 
   .promo-description__review {
@@ -205,12 +223,12 @@
   }
 
   .promo-description__quote {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: $desktop-font-size;
+    line-height: $tablet-line-height;
   }
 
   .promo-description__quote-author {
-    font-size: 21px;
-    line-height: 24px;
+    font-size: $mobile-font-size-bolder;
+    line-height: $mobile-line-height;
   }
 }

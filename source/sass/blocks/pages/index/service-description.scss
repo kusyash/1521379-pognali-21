@@ -3,17 +3,18 @@
   position: relative;
   top: -1px;
   margin-bottom: -30px;
-  padding-top: 31px;
-  padding-right: 48px;
-  padding-bottom: 83px;
-  padding-left: 48px;
+  padding: 70px 48px 83px 48px;
   background-color: $color-basic-blue;
   color: $color-white;
   background-image: url("../../../../img/about-us-mobile-index.png");
-  background-size: 292px 353px;
-  background-position: 21px top;
+  background-size: 292px 368px;
+  background-position: 21px bottom;
   background-repeat: no-repeat;
   z-index: 6;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../../img/about-us-mobile-index@2x.png");
+  }
 }
 
 .service-description__content {
@@ -51,6 +52,7 @@
 
 @media (min-width: $tablet-width) {
   .service-description {
+    border-radius: 0 0 60px 60px;
     overflow: hidden;
     padding-bottom: 89px;
     padding-top: 37px;
@@ -80,6 +82,10 @@
       background-position: 0 0;
       background-size: cover;
       background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../../img/about-us-tablet-index@2x.png");
+      }
     }
   }
 
@@ -98,7 +104,7 @@
     width: 50%;
     margin-bottom: 31px;
     font-size: 28px;
-    line-height: 33px;
+    line-height: $tablet-line-height;
 
     br {
       display: block;
@@ -109,7 +115,7 @@
     width: 50%;
     margin-bottom: 55px;
     font-size: 21px;
-    line-height: 25px;
+    line-height: $mobile-line-height;
   }
 
   .service-description__button-base {
@@ -163,6 +169,10 @@
       background-size: cover;
       background-repeat: no-repeat;
       z-index: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../../img/about-us-desktop-index@2x.png");
+      }
     }
   }
 
@@ -185,7 +195,7 @@
   .service-description__tagline {
     width: 40%;
     margin-bottom: 87px;
-    line-height: 24px;
+    line-height: $mobile-line-height;
   }
 
   .service-description__button-base {
