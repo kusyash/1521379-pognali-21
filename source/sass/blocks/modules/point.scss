@@ -1,0 +1,20 @@
+.point {
+  border-radius: 50px;
+  height: 6px;
+  width: 6px;
+
+  &.point--actively {
+    background-color: $background-color-point-actively;
+  }
+
+  &.point--inactively {
+    background-color: $background-color-point-inactively;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .point {
+    height: 8px;
+    width: 8px;
+  }
+}

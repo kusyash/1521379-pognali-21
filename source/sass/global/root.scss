@@ -1,0 +1,13 @@
+:root {
+  --font-size: #{$mobile-font-size};
+  --line-height: #{$mobile-line-height};
+  --font-size-header: #{$mobile-font-size-heading};
+}
+
+@media (min-width: $tablet-width) {
+  :root {
+    --font-size: #{$tablet-font-size};
+    --line-height: #{$tablet-line-height};
+    --font-size-header: #{$tablet-font-size-heading};
+  }
+}

@@ -1,40 +1,234 @@
 .promo-description {
-  background-color: $color-blue-dark;
+  padding-top: 35px;
+  background-color: #161c35;
+}
+
+.promo-description__topic {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-left: 1px;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  min-height: 397px;
+  top: 0;
+  background-color: $color-basic-blue-darkest;
+  background-image: url("../../../../img/traveller-illustration-mobile-index.png"), url("../../../../img/globe-back-mobile-index.png");
+  background-position: 79px 142px, center center;
+  background-size: 192px 255px, cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../../img/traveller-illustration-mobile-index@2x.png"), url("../../../../img/globe-back-mobile-index@2x.png");
+  }
+}
+
+.promo-description__heading {
+  font-family: $font-bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.promo-description__review {
+  width: auto;
+  display: flex;
+  margin: 0;
+  padding: 48px 50px 109px;
+  flex-direction: column;
+  background-color: $color-basic-blue-darkest;
+}
+
+.promo-description__plan-description {
+  position: relative;
+  margin-bottom: 11px;
+  margin-top: -80px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: $mobile-font-size-button;
+  line-height: 18px;
+  color: $color-basic-blue-darkest;
+}
+
+.promo-description__plan-program {
+  counter-reset: item-counter;
+  line-height: 1;
+  font-family: $font-bold;
+  font-size: $mobile-font-size-button;
+  color: $color-basic-blue-darkest;
+}
+
+.promo-description__quote {
+  font-family: $font-light;
+  font-size: inherit;
+  line-height: 22px;
+}
+
+.promo-description__quote-author {
+  font-style: normal;
+  width: 155px;
+}
+
+.promo-description__heading,
+.promo-description__quote-author {
+  @include indents();
+}
+
+.promo-description__user-list,
+.promo-description__plan-program {
+  @include list-reset ();
+}
+
+.promo-description__heading,
+.promo-description__quote,
+.promo-description__quote-author {
+  color: $color-white;
+}
+
+.promo-description__heading,
+.promo-description__quote-author,
+.promo-description__plan-program {
+  font-family: $font-bold;
+}
+
+@media (min-width: $tablet-width) {
+  .promo-description {
+    background-color: $color-blue-dark;
+    padding-bottom: 28px;
+  }
+
+  .promo-description__topic {
+    margin: 0;
+    padding: 25px 0 12px;
+    min-height: auto;
+    background-color: transparent;
+    background-image: none;
+  }
 
   .promo-description__heading {
-    font-size: 36px;
-    line-height: 40px;
+    margin: 0 auto;
+    width: 400px;
+    line-height: 70px;
+    font-size: 60px;
   }
 
-  .promo-description__heading,
-  .promo-description__user-list,
-  .promo-description__review,
-  .promo-description__quote,
-  .promo-description__quote-author,
-  .promo-description__plan-program-list,
+  .promo-description__review {
+    min-height: 612px;
+    padding: 76px 72px 350px;
+    background-image: url("../../../../img/traveller-illustration-tablet-index.png"), url("../../../../img/globe-back-tablet-index.png");
+    background-color: transparent;
+    background-position: 285px 23px, center 0;
+    background-size: 372px 451px, 765px 612px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/traveller-illustration-tablet-index@2x.png"), url("../../../../img/globe-back-tablet-index@2x.png");
+    }
+  }
+
+  .promo-description__plan-description {
+    @include container();
+    margin-bottom: 69px;
+    margin-top: -138px;
+  }
+
   .promo-description__plan-program {
-    @include indents();
+    top: -140px;
   }
 
-  .promo-description__heading,
-  .promo-description__quote,
+  .promo-description__quote {
+    margin-top: 0;
+    margin-bottom: 45px;
+    width: 264px;
+    font-size: $desktop-font-size;
+    line-height: $tablet-line-height;
+  }
+
   .promo-description__quote-author {
-    color: $color-white;
+    width: 264px;
+    font-size: $mobile-font-size-bolder;
+    line-height: $mobile-line-height;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-description {
+    position: relative;
+    border-radius: 0 0 60px 60px;
+    margin-bottom: -61px;
+    margin-top: -1px;
+    padding-top: 11px;
+    padding-bottom: 0;
+    background-image: url("../../../../img/globe-back-desktop-index.png");
+    background-position: bottom;
+    background-size: 1440px 750px;
+    background-repeat: no-repeat;
+    background-color: $color-basic-blue-darkest;
+    z-index: 7;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/globe-back-desktop-index@2x.png");
+    }
   }
 
-  .promo-description__heading,
-  .promo-description__quote-author,
-  .promo-description__plan-program {
-    font-family: $font-bold;
+  .promo-description__topic {
+    padding: 95px 50px 0 67px;
+    grid-row: 1;
+    grid-column: 1 / 3;
+  }
+
+  .promo-description__heading {
+    text-align: left;
+    margin: 0;
+  }
+
+  .promo-description__content {
+    @include central-location;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 640px;
+    row-gap: 105px;
+    padding: 0;
+    background-image: url("../../../../img/traveller-illustration-desktop-index.png");
+    background-position: 544px 0;
+    background-size: 431px 640px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/traveller-illustration-desktop-index@2x.png");
+    }
+  }
+
+  .promo-description__review {
+    min-height: auto;
+    grid-row: 1;
+    grid-column: 4;
+    margin: 0;
+    padding: 108px 0 0 44px;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .promo-description__plan-description {
+    position: static;
+    grid-row: 2;
+    grid-column: 1 / -1;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .promo-description__quote {
+    font-size: $desktop-font-size;
+    line-height: $tablet-line-height;
   }
 
   .promo-description__quote-author {
-    font-style: normal;
-  }
-
-  .promo-description__plan-program {
-    font-size: 18px;
-    line-height: 18px;
-    color: $color-basic-blue-darkest;
+    font-size: $mobile-font-size-bolder;
+    line-height: $mobile-line-height;
   }
 }

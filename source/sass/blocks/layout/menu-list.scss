@@ -1,14 +1,53 @@
 .menu-list {
-  @include indents();
+  @include list-reset ();
+  text-align: center;
+  font-family: $font-medium;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+
+.menu-list__link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-basic-blue-a6;
+  }
+
+  &:active,
+  &:focus {
+    color: $color-basic-blue-a3;
+    transition: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu-list {
+    font-size: 60px;
+    text-align: left;
+    line-height: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-list {
+    display: flex;
+    line-height: 1;
+    font-size: 20px;
+    color: $color-white;
+  }
+
+  .menu-list__item {
+    margin-right: 34px;
+  }
 
   .menu-list__link {
-    font-family: $font-medium;
-    font-weight: 600;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: $color-basic-blue;
-    text-decoration: none;
-    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    height: 20px;
+    transition: 250ms linear;
 
     &:hover {
       color: $color-yellow;

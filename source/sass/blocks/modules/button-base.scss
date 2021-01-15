@@ -1,18 +1,22 @@
 .button-base {
-  $button-base-height: 40px;
-  $button-base-radius-modifier: 5px;
+  --button-base-square: 50px;
+  --button-base-font-size: 17px;
+  --button-base-radius: 25px;
   font-family: $font-bold;
-  font-weight: 800;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: var(--button-base-font-size);
   text-transform: uppercase;
   color: $color-basic-blue-darkest;
   background-color: $color-yellow;
-  padding: 0 40px;
+  padding: 0 30px;
   border: none;
   outline: none;
-  display: inline-block;
-  line-height: $button-base-height;
-  border-radius: $button-base-height / 2 + $button-base-radius-modifier;
+  display: block;
+  text-align: center;
+  width: 100%;
+  min-width: var(--button-base-square);
+  line-height: var(--button-base-square);
+  border-radius: var(--button-base-radius);
   cursor: pointer;
   text-decoration: none;
 
@@ -29,11 +33,18 @@
     $button-base--next-height: 62px;
     font-size: 18px;
     text-transform: inherit;
+    text-align: left;
     color: $color-basic-blue-lighter;
-    padding-left: 24px;
+    padding: 22px 38px 22px 24px;
+    box-sizing: border-box;
     position: relative;
-    line-height: $button-base--next-height;
-    border-radius: $button-base--next-height / 6.2;
+    min-width: $button-base--next-height;
+    line-height: 18px;
+    border-radius: 10px;
+
+    .button-base__text {
+      padding-right: 24px;
+    }
 
     &::before {
       content: "▸";
@@ -41,17 +52,13 @@
       position: absolute;
       font-size: 40px;
       border: none;
-      right: 23px;
+      right: 13px;
+      top: 23px;
     }
-  }
 
-  &.button-base--submit {
-    margin-left: -10px;
-    padding-left: 22px;
-
-    &::before {
-      right: 12px;
-      top: 1px;
+    &:active,
+    &:focus {
+      color: $color-blue-a3;
     }
   }
 
@@ -69,6 +76,11 @@
 
     &:hover {
       background-color: $color-basic-blue-grey;
+    }
+
+    &:active,
+    &:focus {
+      color: $color-blue-a3;
     }
   }
 
@@ -94,7 +106,7 @@
   }
 
   &.button-base--radius-half {
-    $button-base-radius-modifier: 0;
+    --button-base-radius: 20px;
   }
 
   &.button-base--light {
@@ -128,9 +140,9 @@
 
   &.button-base--border {
     color: $color-basic-blue;
-    padding-left: 19px;
+    padding: 19px 77px 19px 19px;
     border: 3px solid $color-basic-blue;
-    line-height: 56px;
+    line-height: 18px;
     border-radius: 20px;
 
     &:hover {
@@ -149,6 +161,7 @@
       position: absolute;
       font-size: 40px;
       border: none;
+      top: 19px;
       right: 8px;
     }
   }
@@ -213,6 +226,47 @@
     &:focus {
       background-color: $color-basic-blue-grey-dark;
       opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button-base {
+    --button-base-font-size: 20px;
+    --button-base-square: 62px;
+    --button-base-radius: 31px;
+
+    &.button-base--next {
+      padding: 27px 32px 29px;
+      border-radius: 20px;
+      font-size: 24px;
+      line-height: 24px;
+
+      &::before {
+        right: 24px;
+        top: 27px;
+      }
+    }
+
+    &.button-base--border {
+      &::before {
+        top: 26px;
+      }
+    }
+
+    &.button-base--switch {
+      padding-bottom: 25px;
+      padding-top: 24px;
+      font-size: $mobile-font-size-heading;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-base {
+    &.button-base--switch {
+      padding: 38px 2px 42px 0;
+      line-height: 28px;
     }
   }
 }

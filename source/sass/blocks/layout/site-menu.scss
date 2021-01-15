@@ -1,0 +1,228 @@
+.site-menu {
+  @include list-reset ();
+  display: flex;
+  width: 100%;
+  font-family: $font-medium;
+  font-size: $mobile-font-size;
+  line-height: 1;
+
+  &.site-menu--header,
+  &.site-menu--contacts,
+  &.site-menu--registration {
+    flex-direction: column;
+  }
+
+  &.site-menu--registration {
+    margin-left: -35px;
+  }
+
+  &.site-menu--promo {
+    position: absolute;
+    flex-direction: row;
+    width: 270px;
+    bottom: -22px;
+  }
+
+  .site-menu__list {
+    @include list-reset ();
+  }
+
+  .site-menu__item {
+    display: flex;
+    outline: none;
+
+    &.site-menu__item--action {
+      display: block;
+      width: 190px;
+      order: 1;
+    }
+  }
+
+  .site-menu__content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    transition: color $transition-duration-1s;
+    line-height: 18px;
+    text-decoration: none;
+    color: $color-basic-blue;
+    outline: none;
+
+    &:hover {
+      color: $color-basic-blue-a6;
+    }
+
+    &:active,
+    &:focus {
+      transition: none;
+      color: $color-basic-blue-a3;
+    }
+
+    &.site-menu__content--registration {
+      color: $color-yellow;
+
+      &:hover {
+        color: $color-yellow-darker;
+      }
+
+      &:active,
+      &:focus {
+        color: $color-yellow-a3;
+      }
+    }
+  }
+
+  .site-menu__icon-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    margin-right: 16px;
+    background-color: $color-special-blue-darker;
+    color: inherit;
+  }
+
+  .site-menu__icon-image {
+    height: 17px;
+    width: 18px;
+    color: $color-yellow;
+    transition: $transition-duration-1s ease;
+    outline: none;
+
+    &:hover {
+      color: $color-yellow-darker;
+    }
+
+    &:active,
+    &:focus {
+      transition: none;
+      opacity: 0.3;
+    }
+
+    &.site-menu__icon-image--email {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  .site-menu__link {
+    font-family: $font-bold;
+    text-transform: uppercase;
+  }
+
+  .button-base {
+    --button-base-square: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-menu {
+    &.site-menu--header {
+      font-size: $tablet-font-size;
+    }
+
+    &.site-menu--promo {
+      position: absolute;
+      right: 40px;
+      bottom: 326px;
+      display: block;
+      width: 188px;
+    }
+
+    &.site-menu--registration {
+      margin-left: 0;
+    }
+
+    .site-menu__item {
+      margin-left: 0;
+
+      &.site-menu__item--action {
+        width: 188px;
+      }
+
+      &.site-menu__item--registration {
+        margin-left: 35px;
+      }
+    }
+
+    .site-menu__icon-content {
+      height: 68px;
+      width: 68px;
+      margin-right: 23px;
+    }
+
+    .site-menu__icon-image {
+      width: 27px;
+      height: 25px;
+
+      &.site-menu__icon-image--email {
+        height: 19px;
+        width: 28px;
+      }
+    }
+
+    .button-base {
+      --button-base-square: 50px;
+    }
+
+    .site-menu__link {
+      font-size: $tablet-font-size;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-menu {
+    &.site-menu--header {
+      display: none;
+    }
+
+    &.site-menu--promo {
+      display: flex;
+      position: absolute;
+      width: 288px;
+      right: -660px;
+      bottom: 317px;
+    }
+
+    &.site-menu--registration {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .site-menu__item {
+      &.site-menu__item--action {
+        width: 188px;
+      }
+
+      &.site-menu__item--registration {
+        margin-left: 0;
+
+        &.site-menu__item--registration:not(:last-child) {
+          margin-right: 109px;
+        }
+      }
+    }
+
+    .site-menu__icon-content {
+      &.site-menu__icon-content--registration {
+        width: 90px;
+        height: 90px;
+        margin-right: 33px;
+      }
+
+      .site-menu__icon-image {
+        &.site-menu__icon-image--registration {
+          width: 32px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

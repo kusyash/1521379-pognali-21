@@ -1,30 +1,51 @@
 .account-registration {
+  @include container();
+  --account-registration-font-size: $mobile-size-font;
+  --account-registration-line-height: $mobile-line-height;
+  --account-registration-font-size-header: 24px;
+  --account-registration-description-width: 80%;
+
+  position: relative;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: -30px;
+  padding-top: 100px;
+  padding-bottom: 30px;
   background-color: $color-basic-blue;
+  color: $color-white;
+  z-index: 2;
 
   .account-registration__heading {
-    color: $color-special-orange;
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  .account-registration__heading,
-  .account-registration__desc,
-  .account-registration__link,
-  .form-case-inline {
     @include indents();
-  }
-
-  .account-registration__heading,
-  .form-case-inline__input {
+    margin-bottom: 20px;
+    text-align: center;
+    color: $color-special-orange;
     font-family: $font-bold;
+    font-size: var(--font-size-header);
+    line-height: 1;
   }
 
   .account-registration__desc {
-    color: $color-white;
+    @include indents();
+    text-align: center;
+    width: var(--account-registration-description-width);
+    font-family: $font-light;
+    margin: 0 auto;
+    max-width: $tablet-width;
+
+    &.account-registration__desc--sign-in {
+      margin-bottom: 25px;
+    }
+
+    &.account-registration__desc--feedback {
+      margin-bottom: 20px;
+      letter-spacing: 0.01em;
+    }
   }
 
   .account-registration__link {
+    @include indents();
     color: $color-yellow;
+    font-size: var(--account-registration-font-size);
 
     &:hover {
       color: $color-special-orange-dark;
@@ -36,22 +57,74 @@
     }
   }
 
-  .form-case-inline {
-    display: flex;
+  .account-registration__form {
+    margin-bottom: 28px;
   }
 
-  .form-case-inline__input {
-    font-size: 18px;
-    background-color: $color-white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: none;
-    outline: none;
-    padding: 0 25px;
-    height: 62px;
+  .account-registration__submit-text {
+    display: none;
+  }
 
-    &::placeholder {
-      opacity: 0.3;
+  .account-registration__site-menu {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .account-registration {
+    --account-registration-description-width: auto;
+    border-radius: 0 0 60px 60px;
+    margin-bottom: -60px;
+    padding-top: 131px;
+    padding-bottom: 60px;
+
+    .account-registration__form {
+      margin-bottom: 61px;
+    }
+
+    .account-registration__desc {
+      &.account-registration__desc--sign-in {
+        margin-bottom: 68px;
+      }
+
+      &.account-registration__desc--feedback {
+        margin-bottom: 42px;
+      }
+    }
+
+    .account-registration__heading {
+      margin-bottom: 62px;
+    }
+
+    .account-registration__site-menu {
+      width: 100%;
+      justify-content: start;
+      margin-top: 41px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .account-registration {
+    padding: 165px 133px 104px 133px;
+
+    .button-base {
+      min-width: 330px;
+    }
+
+    .account-registration__submit-text {
+      display: inline;
+    }
+
+    .account-registration__site-menu {
+      display: flex;
+      margin-top: 44px;
+      justify-content: center;
+      align-items: baseline;
     }
   }
 }

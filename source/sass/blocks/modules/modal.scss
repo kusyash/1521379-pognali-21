@@ -1,4 +1,7 @@
 .modal {
-  /*display: none;*/
-  background-color: $color-white;
+  display: none;
+
+  &.modal--open {
+    display: block;
+  }
 }

@@ -1,63 +1,384 @@
 .companion-travelers {
   @include main-block-bottom();
+  position: relative;
   background-color: $color-basic-blue;
+  color: $color-white;
+  margin-bottom: -30px;
+  padding-top: 64px;
+  padding-bottom: 31px;
+  z-index: 4;
+}
+
+.companion-travelers__description {
+  position: relative;
+  padding-top: 32px;
+  background-image: url("../../../../img/smolov-back-mobile.png");
+  background-position: 127px top;
+  background-size: 143px 143px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../../img/smolov-back-mobile@2x.png");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    height: 132px;
+    width: 132px;
+    right: 182px;
+    top: 0;
+    background-color: $color-special-blue-dark;
+    z-index: -1;
+  }
+}
+
+.companion-travelers__content {
+  position: relative;
+  margin-bottom: 55px;
+  padding: 0 25px 0 25px;
+  z-index: 2;
+}
+
+.companion-travelers__heading {
+  font-family: $font-bold;
+  font-size: var(--font-size-header);
+  line-height: 1;
+  margin: 0 0 19px 0;
+  color: $color-special-orange;
+}
+
+.companion-travelers__desc {
+  margin: 0 0 21px 0;
+  color: $color-white;
+  font-family: $font-light;
+}
+
+.companion-travelers__tagline {
+  font-family: $font-bold;
+}
+
+.companion-travelers__list {
+  @include list-reset ();
+  position: relative;
+  width: 270px;
+  margin: 0 auto 19px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    height: 71px;
+    width: 71px;
+    left: -36px;
+    top: -32px;
+    background-image: url("../../../../img/rogovaya-back-mobile.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/rogovaya-back-mobile@2x.png");
+    }
+  }
+}
+
+.companion-travelers__item {
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.companion-travelers__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  padding-bottom: 22px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $color-white;
+  color: $color-special-grey;
+}
+
+.companion-travelers__tourist-info {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding-top: 25px;
+}
+
+.companion-travelers__levels {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  left: 17px;
+  top: 17px;
+}
+
+.companion-travelers__levels-image {
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &:hover .companion-travelers__levels-tourist {
+    transform: scale(1.1);
+    transition: $transition-duration-250ms linear;
+  }
+}
+
+.companion-travelers__levels-tourist {
+  width: 100%;
+  height: auto;
+  transition: $transition-duration-250ms linear;
+}
+
+.companion-travelers__desc-item {
+  @include indents();
+}
+
+.companion-travelers__subtitle {
+  @include indents();
+  color: $color-basic-blue-lighter;
+  font-family: $font-bold;
+  font-size: 21px;
+  line-height: 1;
+  margin-left: 10px;
+  padding-right: 16px;
+}
+
+.companion-travelers__flag-list {
+  position: absolute;
+  margin: 0 auto;
+  top: 259px;
+  right: 0;
+  left: 0;
+}
+
+.companion-travelers__tag-list {
+  @include indents();
+  margin: 0 auto 16px;
+  text-align: center;
+  width: 180px;
+  text-decoration: none;
+  color: $color-special-grey;
+  line-height: 18px;
+}
+
+.companion-travelers__transport-list {
+  @include list-reset ();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  list-style: none;
+  color: $color-basic-blue-lighter;
+}
+
+.companion-travelers__transport-item {
+  position: relative;
+  height: 25px;
+  width: 24px;
+  margin-right: 9px;
+  z-index: 5;
+
+  &.companion-travelers__transport-item--active .companion-travelers__transport-icon {
+    opacity: 1;
+  }
+}
+
+.companion-travelers__transport-icon {
+  position: absolute;
+  --vehicle-icon-height: 21px;
+  --vehicle-icon-width: 21px;
+  top: calc(50% - var(--vehicle-icon-height) / 2);
+  left: calc(50% - var(--vehicle-icon-width) / 2);
+  color: #101d41;
+  opacity: 0.15;
+}
+
+.companion-travelers__popup-message {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .companion-travelers {
+    border-radius: 0 0 60px 60px;
+    padding-top: 131px;
+    padding-bottom: 87px;
+  }
+
+  .companion-travelers__description {
+    padding-top: 66px;
+    background-image: url("../../../../img/rogovaya-back-tablet-and-desktop.png");
+    background-position: 384px 9px;
+    background-size: 285px 285px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/rogovaya-back-tablet-and-desktop@2x.png");
+    }
+
+    &::before {
+      height: 212px;
+      width: 212px;
+      right: auto;
+      left: 17px;
+    }
+  }
+
+  .companion-travelers__tagline {
+    margin: 0;
+    font-size: 21px;
+  }
+
+  .companion-travelers__tourist-info {
+    font-size: 24px;
+  }
+
+  .companion-travelers__tag-list {
+    width: 225px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .companion-travelers__content {
+    margin-bottom: 60px;
+    padding-right: 49px;
+    padding-left: 49px;
+  }
 
   .companion-travelers__heading {
-    color: $color-special-orange;
+    margin-bottom: 56px;
   }
 
-  .companion-travelers__heading,
-  .companion-travelers__desc,
-  .companion-travelers__list,
-  .companion-travelers__subtitle,
-  .companion-travelers__desc-item,
-  .companion-travelers__levels-number,
-  .companion-travelers__levels-text {
-    @include indents();
+  .companion-travelers__desc {
+    width: 425px;
+    margin-bottom: 40px;
+    line-height: 34px;
   }
 
-  .companion-travelers__heading,
-  .companion-travelers__levels-number {
-    font-size: 24px;
-    line-height: 24px;
-    font-family: $font-bold;
+  .companion-travelers__card {
+    border-radius: 20px;
+    padding-bottom: 27px;
   }
 
-  .companion-travelers__levels-number,
-  .companion-travelers__show-all {
-    font-family: $font-bold;
+  .companion-travelers__flag-list {
+    top: 273px;
   }
 
-  .companion-travelers__desc,
-  .companion-travelers__levels-number,
-  .companion-travelers__levels-text {
-    color: $color-white;
-  }
+  .companion-travelers__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto 31px;
+    padding: 0 10px;
+    background-image: none;
 
-  .companion-travelers__subtitle {
-    color: $color-basic-blue-lighter;
-    font-family: $font-bold;
-    font-size: 21px;
-    line-height: 21px;
-  }
+    &::before {
+      border-radius: 20px;
+      height: 143px;
+      width: 143px;
+      top: -97px;
+      left: 16px;
+      background-image: url("../../../../img/smolov-back-tablet-and-desktop.png");
 
-  .companion-travelers__tag {
-    font-family: $font-medium;
-    color: $color-special-grey;
-    text-decoration: none;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../../img/smolov-back-tablet-and-desktop@2x.png");
+      }
+    }
   }
 
   .companion-travelers__item {
-    background-color: $color-white;
+    width: 285px;
+    margin-bottom: 50px;
   }
 
-  .companion-travelers__levels-text {
-    font-family: $font-medium;
-    font-size: 14px;
-    line-height: 14px;
+  .companion-travelers__levels-image {
+    border-radius: 20px 20px 0 0;
   }
 
-  .companion-travelers__button-base {
-    padding-right: 133px;
+  .companion-travelers__show-all {
+    width: 616px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companion-travelers {
+    padding-top: 130px;
+    padding-bottom: 26px;
+  }
+
+  .companion-travelers__description {
+    @include central-location();
+    display: grid;
+    grid-template-rows: min-content min-content;
+    column-gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 56px;
+    padding-bottom: 54px;
+    background-position: 130px 316px;
+
+    &::before {
+      left: 6px;
+    }
+  }
+
+  .companion-travelers__content {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    margin-bottom: 80px;
+    padding-left: 71px;
+    background-image: url("../../../../img/smolov-back-tablet-and-desktop.png");
+    background-position: 486px top;
+    background-size: 143px 143px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/smolov-back-tablet-and-desktop@2x.png");
+    }
+  }
+
+  .companion-travelers__desc {
+    margin-bottom: 30px;
+  }
+
+  .companion-travelers__card {
+    padding-bottom: 26px;
+  }
+
+  .companion-travelers__list {
+    grid-row: 1 / -1;
+    justify-content: space-between;
+    grid-column: 2;
+    margin-bottom: 0;
+    padding: 0;
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  .companion-travelers__show-all {
+    align-self: end;
+    width: 280px;
+    margin-bottom: 50px;
+    margin-left: 71px;
   }
 }

@@ -1,0 +1,17 @@
+.header {
+  background-color: $color-basic-blue-darkest;
+
+  &.header--default {
+    display: contents;
+  }
+
+  &.header--scrolling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    max-height: 73px;
+    overflow: auto;
+  }
+}

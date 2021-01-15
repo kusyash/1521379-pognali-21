@@ -1,0 +1,32 @@
+@mixin font-normal() {
+  font-family: $font-normal;
+  font-size: $mobile-size-font;
+  line-height: 1.375;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: $tablet-size-font;
+    line-height: 1.179;
+  }
+}
+
+@mixin bolder-font {
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: $mobile-size-font-bolder;
+    line-height: 1.143;
+  }
+}
+
+@mixin heading() {
+  font-size: $mobile-size-heading;
+  line-height: 1;
+  font-weight: bold;
+  color: $bg-special-bright;
+
+  @media (min-width: $tablet-width) {
+    font-size: $tablet-size-heading;
+    line-height: 1;
+  }
+}
