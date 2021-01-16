@@ -1,4 +1,6 @@
 .contacts-company-menu {
+  display: none;
+
   .contacts-company-menu__item {
     display: block;
     width: 40px;
@@ -56,6 +58,11 @@
 
 @media (min-width: $tablet-width) {
   .contacts-company-menu {
+    display: flex;
+    width: 188px;
+    margin-top: -94px;
+    justify-self: right;
+
     .contacts-company-menu__item {
       display: none;
     }
@@ -68,6 +75,9 @@
 
 @media (min-width: $desktop-width) {
   .contacts-company-menu {
+    margin: 0;
+    width: 288px;
+
     .contacts-company-menu__item {
       display: block;
       width: 50px;

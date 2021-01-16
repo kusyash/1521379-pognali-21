@@ -1,25 +1,102 @@
 .traveler-profile {
-  .traveler-profile__label {
+  --profile-photo-size: 100px;
+  display: flex;
+  justify-content: center;
+
+  &__label {
     position: relative;
     align-self: center;
     font-family: $font-bold;
+    text-align: center;
     font-size: 16px;
     line-height: 18px;
     color: $color-basic-blue-lighter;
     text-transform: uppercase;
   }
 
-  .traveler-profile__label,
-  .traveler-profile__transport-list {
-    @include indents();
+  &__transport-list {
+    @include list-reset();
+    display: flex;
+    justify-content: center;
+    margin: 7px 0 15px;
   }
 
-  .traveler-profile__tags {
+  &__tags {
     color: $color-special-grey-a6;
   }
 
-  .traveler-profile__desc-field {
-    border: 1px solid $color-basic-blue-grey-darkest;
-    border-radius: 10px;
+  &__transport-label {
+    background-color: $color-white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    input:not(:checked) + svg {
+      opacity: 0.15;
+    }
+  }
+}
+
+
+.traveler-profile__desc-field {
+  @include indents();
+  border: 1px solid $color-basic-blue-grey-darkest;
+  border-radius: 10px;
+
+  &.traveler-profile__desc-field----transport {
+    height: 63px;
+  }
+
+  &.traveler-profile__desc-field--tags {
+    height: 89px;
+    padding: 9px 25px 17px 25px;
+  }
+}
+
+.traveler-profile__interpretation {
+  display: grid;
+  max-width: 450px;
+  width: 100%;
+  grid-template-rows: 136px;
+  grid-template-columns: 50% 50%;
+  padding: 6px 25px 34px;
+}
+
+.traveler-profile__levels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.traveler-profile__content-tags {
+  display: grid;
+  grid-column: 1/-1;
+  margin-top: 24px;
+}
+
+.traveler-profile__content-transport {
+  display: grid;
+  grid-column: 1/-1;
+  border: none;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .traveler-profile {
+    --profile-photo-size: 94px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .traveler-profile {
+    position: relative;
+    --profile-photo-size: 190px;
+    z-index: 2;
   }
 }

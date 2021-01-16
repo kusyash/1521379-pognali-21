@@ -224,7 +224,7 @@
 @media (min-width: $desktop-width) {
   .main-navigation {
     display: grid;
-    grid-template-columns: max-content auto minmax(max-content, 1fr) max-content;
+    grid-template-columns: max-content auto max-content;
     grid-auto-rows: auto;
     width: 1320px;
     margin: 0 auto;

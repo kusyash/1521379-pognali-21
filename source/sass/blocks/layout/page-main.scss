@@ -1,16 +1,102 @@
 .page-main {
   position: relative;
 
-  .page-main__header {
-    @include main-block-bottom();
+  .page-main__header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+    padding-top: 36px;
     background-color: $color-blue-dark;
+    z-index: 2;
+  }
+
+  .page-main__header-inner {
+    max-width: 450px;
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .page-main__heading {
+    @include indents();
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0 0 15px;
+    font-family: $font-bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: $color-white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 4px;
+      height: 5px;
+      right: 0;
+      bottom: -2px;
+      left: 0;
+      background-color: $color-special-orange-dark;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    .page-main__header-wrapper {
+      padding-top: 88px;
+      border-radius: 0 0 60px 60px;
+    }
+
+    .page-main__header-inner {
+      display: grid;
+      align-items: end;
+      justify-content: space-between;
+      grid-template-columns: auto auto;
+      max-width: 688px;
+      padding-right: 35px;
+      padding-left: 35px;
+
+      &.page-main__header-inner--direction-page {
+        display: block;
+        padding-right: 40px;
+      }
+    }
 
     .page-main__heading {
-      @include indents();
-      font-family: $font-bold;
-      font-size: 36px;
-      line-height: 36px;
-      color: $color-white;
+      padding-bottom: 70px;
+      font-size: 60px;
+      line-height: 60px;
+
+      &::before {
+        content: "";
+        height: 8px;
+        bottom: -4px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    .page-main__header-wrapper {
+      padding-top: 130px;
+    }
+
+    .page-main__header-inner {
+      max-width: 1320px;
+      padding-right: 64px;
+      padding-left: 64px;
+
+      &.page-main__header-inner--direction-page {
+        padding-right: 500px;
+      }
+    }
+
+    .page-main__heading {
+      padding-bottom: 71px;
     }
   }
 }
